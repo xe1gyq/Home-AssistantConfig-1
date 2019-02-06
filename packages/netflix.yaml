@@ -1,0 +1,18 @@
+############################################
+##                Netflix                 ##
+############################################
+###### CUSTOMIZATIONS-----------------------
+homeassistant:
+  customize:
+    script.netflix_living_room:
+      icon: mdi:netflix
+      friendly_name: Netflix
+
+###### SCRIPTS -----------------------------
+script:
+  netflix_living_room:
+    sequence:
+      - service: remote.turn_on
+        entity_id: remote.harmony_hub
+        data:
+          activity: "30887292"

@@ -1,0 +1,17 @@
+############################################
+##              Google Home               ##
+############################################
+###### DEVICE TRACKER ----------------------
+device_tracker:
+  - platform: googlehome
+    host: 10.3.1.9
+    rssi_threshold: -70
+
+###### SENSORS -----------------------------
+sensor:
+  - platform: template
+    sensors:
+      googlehome:
+        friendly_name: Google Home
+        value_template: "{% if is_state('device_tracker.googlehome', 'home') %}Connected{% else %}!no-reply, please check!{% endif %}"
+        icon_template: "{% if is_state('device_tracker.googlehome', 'home') %} mdi:google-home{% else %}mdi:lan-disconnect{% endif %}"

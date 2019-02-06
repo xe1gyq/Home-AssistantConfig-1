@@ -1,0 +1,9 @@
+############################################
+##                  WIKI                  ##
+############################################
+###### PANELS ------------------------------
+panel_iframe:
+  wiki:
+    title: 'Wiki'
+    icon: mdi:wikipedia
+    url: 'http://10.3.1.1:50443/mywiki/index.php/Hoofdpagina'

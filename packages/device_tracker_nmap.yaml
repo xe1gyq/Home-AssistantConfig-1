@@ -1,0 +1,18 @@
+############################################
+##                  NMAP                  ##
+############################################
+###### DEVICE TRACKERS ---------------------
+device_tracker:
+  - platform: nmap_tracker
+    hosts: 
+    - 10.3.1.1-25
+    - 10.3.1.100-125
+    - 10.3.1.200-254
+    scan_options: " --privileged -sP "
+    exclude:
+    - 10.3.1.2
+    consider_home: 300
+    interval_seconds: 30
+    new_devices_defaults:
+    track_new_devices: yes
+    hide_if_away: false

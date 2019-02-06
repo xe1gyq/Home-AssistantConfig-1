@@ -1,0 +1,11 @@
+############################################
+##               HTPC-02                  ##
+############################################
+###### SENSORS -----------------------------
+sensor:
+  - platform: template
+    sensors:
+      htpc02:
+        friendly_name: Kodi HTPC-02
+        value_template: "{% if is_state('device_tracker.htpc02', 'home') %}Connected{% else %}Offline{% endif %}"
+        icon_template: "{% if is_state('device_tracker.htpc02', 'home') %} mdi:kodi{% else %}mdi:lan-disconnect{% endif %}"

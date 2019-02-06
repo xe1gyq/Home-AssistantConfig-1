@@ -1,0 +1,12 @@
+############################################
+##                   DEFFW01              ##
+############################################
+###### SENSORS -----------------------------
+sensor:
+  - platform: template
+    sensors:
+      deffw01:
+        friendly_name: DEF-FW-01
+        value_template: "{% if is_state('device_tracker.deffw01', 'home') %}Connected{% else %}!no-reply, please check!{% endif %}"
+        icon_template: "{% if is_state('device_tracker.deffw01', 'home') %} mdi:router-wireless{% else %}mdi:lan-disconnect{% endif %}"
+#        icon_color: if (state === 'Connected') return [251, 210, 41]; else return [54, 95, 140];

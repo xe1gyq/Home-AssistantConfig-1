@@ -1,0 +1,25 @@
+############################################
+##            Ziggo Horizonbox            ##
+############################################
+###### CUSTOMIZATIONS-----------------------
+
+homeassistant:
+  customize:
+    script.ziggo_tv_living_room:
+      icon: mdi:television
+      friendly_name: Ziggo TV
+
+###### SCRIPTS -----------------------------
+script:
+  ziggo_tv_living_room:
+    sequence:
+      - service: remote.turn_on
+        entity_id: remote.harmony_hub
+        data:
+          activity: "24699321"
+
+###### MEDIA PLAYERS -----------------------
+media_player:
+  - platform: ziggo_mediabox_xl
+    host: 10.3.1.104
+    name: Ziggo Mediabox

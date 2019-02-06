@@ -1,0 +1,47 @@
+############################################
+##                 RADARR                 ##
+############################################
+###### SHELL COMMANDS ----------------------
+shell_command:
+  download_movie: /home/homeassistant/.homeassistant/scripts/download.sh "{{movie}}" 0
+  search_movie: /home/homeassistant/.homeassistant/scripts/download.sh "{{movie}}" 1
+  download_option: /home/homeassistant/.homeassistant/scripts/download.sh "{{option}}" 2
+
+###### PANELS ------------------------------
+panel_iframe:
+  radarr:
+    title: 'Radarr Movies Download'
+    icon: mdi:movie
+    url: 'http://10.3.1.2:7878/radarr'
+
+###### SENSORS -----------------------------
+sensor:
+- platform: radarr_upcoming_media
+  api_key: !secret api_key_radarr
+  host: 10.3.1.2
+  port: 7878
+  days: 720
+  ssl: false
+
+###### SCRIPTS -----------------------------
+script:
+  download_movie:
+    alias: download_movie
+    sequence:
+    - service: shell_command.download_movie
+      data_template:
+        movie: '{{ movie }}'
+
+  search_movie:
+    alias: search_movie
+    sequence:
+    - service: shell_command.search_movie
+      data_template:
+        movie: '{{ movie }}'
+
+  download_option:
+    alias: download_option
+    sequence:
+    - service: shell_command.download_option
+      data_template:
+        option: '{{ option }}'

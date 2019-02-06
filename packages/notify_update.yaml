@@ -1,0 +1,14 @@
+############################################
+##        Packages / Notify Update        ##
+############################################
+###### SCRIPTS -----------------------------
+script:
+  notify_update:
+    sequence:
+    - event: LOGBOOK_ENTRY
+      event_data:
+        name: UPDATE
+        message: "New Home Assistant update availible."
+    - service: notify.notify
+      data:
+        message: "There is a new Home Assistant update availible."

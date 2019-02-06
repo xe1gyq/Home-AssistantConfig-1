@@ -1,0 +1,17 @@
+############################################
+##               Light Groups             ##
+############################################
+###### LIGHT GROUPS ------------------------
+light:
+  - platform: group
+    name: Main Lights
+    entities:
+      - light.speaker_light
+      - light.hyperion
+
+  - platform: group
+    name: All Lights
+    entities:
+      - light.speaker_light
+      - light.kitchen_light
+      - light.hyperion

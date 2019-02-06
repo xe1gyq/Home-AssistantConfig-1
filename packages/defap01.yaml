@@ -1,0 +1,11 @@
+############################################
+##                  DEFAP01               ##
+############################################
+###### SENSORS -----------------------------
+sensor:
+  - platform: template
+    sensors:
+      defap01:
+        friendly_name: DEF-AP-01
+        value_template: "{% if is_state('device_tracker.defap01', 'home') %}Connected{% else %}!no-reply, please check!{% endif %}"
+        icon_template: "{% if is_state('device_tracker.defap01', 'home') %} mdi:access-point-network{% else %}mdi:lan-disconnect{% endif %}"

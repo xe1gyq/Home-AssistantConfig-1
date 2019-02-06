@@ -1,0 +1,18 @@
+############################################
+##               Shutdown                 ##
+############################################
+###### CUSTOMIZATIONS-----------------------
+homeassistant:
+  customize:
+    script.shutdown:
+      icon: mdi:power
+      friendly_name: Shutdown
+
+###### SCRIPTS -----------------------------
+script:
+  shutdown:
+    sequence:
+      - service: remote.turn_on
+        entity_id: remote.harmony_hub
+        data:
+          activity: "-1"

@@ -1,0 +1,9 @@
+############################################
+##             PANEL TRAFFIC:             ##
+############################################
+###### PANELS ------------------------------
+panel_iframe:
+  trafficcamera:
+    title: 'Verkeerscameras'
+    icon: mdi:cctv
+    url: 'https://rotterdamonderweg.nl/verkeerscameras?q=%2Fverkeerscameras#verkeerscameraModal1448'

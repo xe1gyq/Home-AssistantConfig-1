@@ -1,0 +1,22 @@
+############################################
+##                SHARP LE60              ##
+############################################
+###### MEDIA PLAYER ------------------------
+#media_player:
+#  - platform: aquostv
+#    host: 10.3.1.12
+#    username:
+#    password: 
+#    name: sharp le60
+#    scan_interval: 60
+#    power_on_enabled: true
+
+###### SENSORS -----------------------------
+sensor:
+  - platform: template
+    sensors:
+      sharple60:
+        friendly_name: Sharp LE60
+        value_template: "{% if is_state('device_tracker.sharple60', 'home') %}Connected{% else %}Offline{% endif %}"
+        icon_template: "{% if is_state('device_tracker.sharple60', 'home') %} mdi:television-box{% else %}mdi:television-box{% endif %}"
+#        icon_color: if (state === 'Connected') return [251, 210, 41]; else return [54, 95, 140];

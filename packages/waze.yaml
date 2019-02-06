@@ -1,0 +1,35 @@
+############################################
+##            WAZE TRAVEL TIME            ##
+############################################
+###### SENSORS -----------------------------
+sensor:
+  - platform: waze_travel_time
+    origin: !secret my_device_tracker
+    destination: zone.shadownet
+    region: EU
+    name: !secret me_to_home
+
+  - platform: waze_travel_time
+    origin: !secret my_device_tracker
+    destination: !secret my_work_zone
+    region: EU
+    name: !secret me_to_work
+
+  - platform: waze_travel_time
+    origin: !secret wife_device_tracker
+    destination: zone.shadownet
+    region: EU
+    name: !secret wife_to_home
+
+  - platform: waze_travel_time
+    origin: !secret wife_device_tracker
+    destination: !secret wife_work_zone1
+    region: EU
+    name: !secret wife_to_work1
+
+  - platform: waze_travel_time
+    origin: !secret wife_device_tracker
+    destination: !secret wife_work_zone2
+    region: EU
+    name: !secret wife_to_work2
+

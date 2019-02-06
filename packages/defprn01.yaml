@@ -1,0 +1,11 @@
+############################################
+##                 DEFPRN01               ##
+############################################
+###### SENSORS -----------------------------
+sensor:
+  - platform: template
+    sensors:
+      defprn01:
+        friendly_name: DEF-PRN-01
+        value_template: "{% if is_state('device_tracker.defprn01', 'home') %}Connected{% else %}Offline{% endif %}"
+        icon_template: "{% if is_state('device_tracker.defprn01', 'home') %} mdi:printer{% else %}mdi:lan-disconnect{% endif %}"

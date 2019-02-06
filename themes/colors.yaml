@@ -1,0 +1,9 @@
+cold:
+  primary-text-color: '#447ebc'
+  label-badge-red: '#447ebc'
+comfortable:
+  primary-text-color: '#629e51'
+  label-badge-red: '#629e51'
+hot:
+  primary-text-color: '#bf1b00'
+  label-badge-red: '#bf1b00'

@@ -1,0 +1,314 @@
+#known_devices.yaml
+chromecast_living_room:
+  hide_if_away: false
+  icon: mdi:google-chrome
+  mac: 48:D6:D5:1A:03:DA
+  name: chromecast01
+  picture:
+  track: true
+
+defap01:
+  hide_if_away: false
+  icon: mdi:access-point-network
+  mac: C4:71:54:09:A8:10
+  name: DEF-AP-01
+  picture:
+  track: true
+
+defcam01:
+  hide_if_away: false
+  icon: mdi:cctv
+  mac: 00:0C:43:20:03:7C
+  name: defcam01
+  picture:
+  track: true
+
+deffw01:
+  hide_if_away: false
+  icon: mdi:router-wireless
+  mac: E4:F4:C6:09:59:A7
+  name: DEF-FW-01
+  picture:
+  track: true
+
+defprn01:
+  hide_if_away: false
+  icon: mdi:printer
+  mac: DC:4A:3E:A0:2A:E0
+  name: DEF-PRN-01
+  picture:
+  track: true
+
+harmony_hub:
+  hide_if_away: false
+  icon: mdi:remote
+  mac: 00:04:20:E7:2B:0A
+  name: HarmonyHub
+  picture:
+  track: true
+
+homeassistanttablet:
+  hide_if_away: false
+  icon: mdi:tablet-android
+  mac: 10:D3:8A:BC:F2:C7
+  name: Galaxy Tab 4
+  picture:
+  track: true
+
+htpc01:
+  hide_if_away: false
+  icon: mdi:kodi
+  mac: 6C:62:6D:8F:A1:66
+  name: htpc01
+  picture:
+  track: true
+
+htpc02:
+  hide_if_away: false
+  icon: mdi:kodi
+  mac: 18:A9:05:20:43:E9
+  name: HTPC-02
+  picture:
+  track: true
+
+iiidefcontoweriii:
+  hide_if_away: false
+  icon: mdi:desktop-tower
+  mac: 70:4D:7B:2D:43:09
+  name: iiidefcontoweriii
+  picture:
+  track: true
+
+toon:
+  hide_if_away: false
+  icon: mdi:flash
+  mac: 40:E2:30:E2:93:DA
+  name: Toon
+  picture:
+  track: true
+
+vsx922:
+  hide_if_away: false
+  icon: mdi:surround-sound-5-1
+  mac: 74:5E:1C:11:28:16
+  name: Pioneer VSX-922
+  picture:
+  track: true
+
+googlehome:
+  hide_if_away: false
+  icon: mdi:google-home
+  mac: 20:DF:B9:C5:36:F9
+  name: Google Home
+  picture:
+  track: true
+
+sharple60:
+  hide_if_away: false
+  icon: mdi:television-box
+  mac: 78:1C:5A:C7:78:F3
+  name: SharpLE60
+  picture:
+  track: true
+
+#OWN DEVICES OWNTRACK/CLOUDMQTT/NMAP
+thomas_thomasgalaxys8:
+  hide_if_away: false
+  icon: mdi:cellphone-android
+  mac: 30:07:4D:00:C9:15
+  name: !secret my_name
+  picture: /local/icons/avatars/TVD.png
+  track: true
+
+joella_joellagalaxys8:
+  hide_if_away: false
+  icon: mdi:cellphone-android
+  mac: 24:18:1D:A2:E4:E3
+  name: !secret wife_name
+  picture: /local/icons/avatars/JMP.png
+  track: true
+
+ltjoella:
+  hide_if_away: true
+  icon: mdi:laptop-windows
+  mac: AC:81:12:24:8D:CF
+  name: LT-Joella
+  picture:
+  track: true
+
+ltthomas:
+  hide_if_away: true
+  icon: mdi:laptop-windows
+  mac: 60:F6:77:B4:DC:B4
+  name: STX-L10P-03
+  picture:
+  track: true
+
+#FRIENDS&FAMLIY NMAP
+rtp:
+  hide_if_away: true
+  icon: mdi:cellphone-android
+  mac: 08:C5:E1:A9:24:EE
+  name: Timo Ruben Passchier
+  picture: /local/icons/avatars/RTP.png
+  track: true
+
+gs108pe:
+  hide_if_away: true
+  icon: mdi:switch
+  mac: 04:A1:51:6C:AC:0C
+  name: Netgear Switch GS108PE
+  picture:
+  track: true
+
+tg:
+  hide_if_away: true
+  icon:
+  mac: 50:A6:7F:73:23:F0
+  name: Tim Gille
+  picture:
+  track: true
+
+rs:
+  hide_if_away: true
+  icon: mdi:cellphone-android
+  mac: 04:F1:28:26:6C:4A
+  name: Robert Schmidt
+  picture: /local/icons/avatars/RS.png
+  track: true
+
+defcam02:
+  hide_if_away: false
+  icon:
+  mac: 00:62:6E:46:AD:54
+  name: DEF-CAM-02
+  picture:
+  track: true
+
+azi:
+  hide_if_away: true
+  icon:
+  mac: 8C:F5:A3:34:6E:3D
+  name: Amir Zarif Ibrahim
+  picture: /local/icons/avatars/AZI.png
+  track: true
+
+stxl10p03:
+  hide_if_away: false
+  icon:
+  mac: 00:FF:38:48:F3:8A
+  name: STX-L10P-03
+  picture:
+  track: true
+
+kk:
+  hide_if_away: false
+  icon:
+  mac: 30:07:4D:AC:C1:A3
+  name: Kursat Karacan
+  picture: /local/icons/avatars/KK.png
+  track: true
+
+google_home:
+  hide_if_away: false
+  icon:
+  mac: BT_20:DF:B9:87:ED:91
+  name: Google Home
+  picture:
+  track: true
+
+10_3_1_9_00_09_dd_50_8a_1f:
+  hide_if_away: false
+  icon:
+  mac: 10.3.1.9_00:09:DD:50:8A:1F
+  name: 10.3.1.9 00:09:dd:50:8a:1f
+  picture:
+  track: true
+
+10_3_1_9_6b_ab_ab_c3_66_4f:
+  hide_if_away: false
+  icon:
+  mac: 10.3.1.9_6B:AB:AB:C3:66:4F
+  name: 10.3.1.9 6b:ab:ab:c3:66:4f
+  picture:
+  track: true
+
+10_3_1_9_5b_9a_7e_8f_e5_d0:
+  hide_if_away: false
+  icon:
+  mac: 10.3.1.9_5B:9A:7E:8F:E5:D0
+  name: 10.3.1.9 5b:9a:7e:8f:e5:d0
+  picture:
+  track: true
+
+5c_a3_9d_f1_08_da:
+  hide_if_away: false
+  icon:
+  mac: 5C:A3:9D:F1:08:DA
+  name: 5c a3 9d f1 08 da
+  picture:
+  track: true
+
+e8_d8_19_7d_9f_bd:
+  hide_if_away: false
+  icon:
+  mac: E8:D8:19:7D:9F:BD
+  name: e8 d8 19 7d 9f bd
+  picture:
+  track: true
+
+galaxy_j6:
+  hide_if_away: false
+  icon:
+  mac: 68:E7:C2:17:01:AB
+  name: Galaxy-J6
+  picture:
+  track: true
+
+10_3_1_9_59_76_c1_f8_ee_3b:
+  hide_if_away: false
+  icon:
+  mac: 10.3.1.9_59:76:C1:F8:EE:3B
+  name: 10.3.1.9 59:76:c1:f8:ee:3b
+  picture:
+  track: true
+
+oneplus_3:
+  hide_if_away: false
+  icon:
+  mac: C0:EE:FB:DB:1E:F1
+  name: OnePlus 3
+  picture:
+  track: true
+
+htpc_01:
+  hide_if_away: false
+  icon:
+  mac: 48:5D:60:19:7B:F6
+  name: HTPC-01
+  picture:
+  track: true
+
+10_3_1_9_63_5f_4a_c5_f1_4a:
+  hide_if_away: false
+  icon:
+  mac: 10.3.1.9_63:5F:4A:C5:F1:4A
+  name: 10.3.1.9 63:5f:4a:c5:f1:4a
+  picture:
+  track: true
+
+10_3_1_9_6f_20_f0_f7_f1_53:
+  hide_if_away: false
+  icon:
+  mac: 10.3.1.9_6F:20:F0:F7:F1:53
+  name: 10.3.1.9 6f:20:f0:f7:f1:53
+  picture:
+  track: true
+
+10_3_1_9_94_0e_6b_90_95_b9:
+  hide_if_away: false
+  icon:
+  mac: 10.3.1.9_94:0E:6B:90:95:B9
+  name: 10.3.1.9 94:0e:6b:90:95:b9
+  picture:
+  track: true

@@ -1,0 +1,21 @@
+############################################
+##                RESTART                 ##
+############################################
+###### CUSTOMIZATIONS-----------------------
+homeassistant:
+  customize:
+    script.ha_restart:
+      icon: mdi:restart
+      friendly_name: Restart Home Assistant
+
+###### SCRIPTS -----------------------------
+script:
+  ha_restart:
+    alias: Restart Home Assistant
+    sequence:
+      - alias: Restart Home Assistant
+        service: shell_command.ha_restart
+
+###### SHELL COMMANDS ----------------------
+shell_command:
+  ha_restart: '/usr/bin/sudo /bin/systemctl restart home-assistant@homeassistant.service'

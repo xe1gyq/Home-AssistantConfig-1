@@ -1,0 +1,17 @@
+############################################
+##             Pioneer VSX-922            ##
+############################################
+###### MEDIA PLAYERS -----------------------
+media_player:
+  - platform: pioneer
+    host: 10.3.1.4
+    name: vsx922
+
+###### SENSORS -----------------------------
+sensor:
+  - platform: template
+    sensors:
+      vsx992:
+        friendly_name: Pioneer VSX-922
+        value_template: "{% if is_state('device_tracker.vsx922', 'home') %}Connected{% else %}Offline{% endif %}"
+        icon_template: "{% if is_state('device_tracker.vsx922', 'home') %} mdi:surround-sound-5-1{% else %}mdi:lan-disconnect{% endif %}"

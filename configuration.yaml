@@ -1,0 +1,205 @@
+############################################
+##               CONFIGURATION            ##
+############################################
+homeassistant:
+  name: ShadowNet
+  unit_system: metric
+  latitude: !secret home_latitude
+  longitude: !secret home_longitude
+  elevation: 3
+  time_zone: Europe/Amsterdam
+  packages: !include_dir_named packages
+  auth_mfa_modules:
+    - type: totp
+      name: Authenticator app
+
+config:
+http:
+  api_password: !secret http_api_password
+  ip_ban_enabled: true
+  login_attempts_threshold: 5
+  base_url: !secret http_base_url
+
+#lovelace:
+#  mode: yaml
+#shopping_list:
+#discovery:
+#logger:
+
+custom_updater:
+  card_urls:
+    - https://raw.githubusercontent.com/kuuji/button-card/master/tracker.json
+
+updater:
+  reporting: false
+
+cast:
+  media_player:
+    - host: 10.3.1.7
+    - host: 10.3.1.9
+
+tts:
+  - platform: google
+    cache: true
+    cache_dir: /tmp/tts
+    time_memory: 300
+    base_url: https://homeassistant.iiidefconiii.nl
+
+conversation:
+history:
+logbook:
+  exclude:
+    domains:
+      - device_tracker
+      - calendar
+    entities:
+      - weather.dark_sky
+      - sensor.dark_sky_apparent_temperature
+      - sensor.dark_sky_daily_max_precip_intensity_0
+      - sensor.dark_sky_daily_max_precip_intensity_1
+      - sensor.dark_sky_daily_max_precip_intensity_2
+      - sensor.dark_sky_daily_max_precip_intensity_3
+      - sensor.dark_sky_daily_max_precip_intensity_4
+      - sensor.dark_sky_daily_max_precip_intensity_5
+      - sensor.dark_sky_daily_summary
+      - sensor.dark_sky_daytime_high_apparent_temperature_0
+      - sensor.dark_sky_daytime_high_apparent_temperature_1
+      - sensor.dark_sky_daytime_high_apparent_temperature_2
+      - sensor.dark_sky_daytime_high_apparent_temperature_3
+      - sensor.dark_sky_daytime_high_apparent_temperature_4
+      - sensor.dark_sky_daytime_high_apparent_temperature_5
+      - sensor.dark_sky_daytime_high_temperature_0
+      - sensor.dark_sky_daytime_high_temperature_1
+      - sensor.dark_sky_daytime_high_temperature_2
+      - sensor.dark_sky_daytime_high_temperature_3
+      - sensor.dark_sky_daytime_high_temperature_4
+      - sensor.dark_sky_daytime_high_temperature_5
+      - sensor.dark_sky_humidity
+      - sensor.dark_sky_humidity_0
+      - sensor.dark_sky_humidity_1
+      - sensor.dark_sky_humidity_2
+      - sensor.dark_sky_humidity_3
+      - sensor.dark_sky_humidity_4
+      - sensor.dark_sky_humidity_5
+      - sensor.dark_sky_icon
+      - sensor.dark_sky_icon_0
+      - sensor.dark_sky_icon_1
+      - sensor.dark_sky_icon_2
+      - sensor.dark_sky_icon_3
+      - sensor.dark_sky_icon_4
+      - sensor.dark_sky_icon_5
+      - sensor.dark_sky_nearest_storm_distance
+      - sensor.dark_sky_overnight_low_apparent_temperature_0
+      - sensor.dark_sky_overnight_low_apparent_temperature_1
+      - sensor.dark_sky_overnight_low_apparent_temperature_2
+      - sensor.dark_sky_overnight_low_apparent_temperature_3
+      - sensor.dark_sky_overnight_low_apparent_temperature_4
+      - sensor.dark_sky_overnight_low_apparent_temperature_5
+      - sensor.dark_sky_overnight_low_temperature_0
+      - sensor.dark_sky_overnight_low_temperature_1
+      - sensor.dark_sky_overnight_low_temperature_2
+      - sensor.dark_sky_overnight_low_temperature_3
+      - sensor.dark_sky_overnight_low_temperature_4
+      - sensor.dark_sky_overnight_low_temperature_5
+      - sensor.dark_sky_precip
+      - sensor.dark_sky_precip_0
+      - sensor.dark_sky_precip_1
+      - sensor.dark_sky_precip_2
+      - sensor.dark_sky_precip_3
+      - sensor.dark_sky_precip_4
+      - sensor.dark_sky_precip_5
+      - sensor.dark_sky_precip_accumulation_0
+      - sensor.dark_sky_precip_accumulation_1
+      - sensor.dark_sky_precip_accumulation_2
+      - sensor.dark_sky_precip_accumulation_3
+      - sensor.dark_sky_precip_accumulation_4
+      - sensor.dark_sky_precip_accumulation_5
+      - sensor.dark_sky_precip_intensity
+      - sensor.dark_sky_precip_intensity_0
+      - sensor.dark_sky_precip_intensity_1
+      - sensor.dark_sky_precip_intensity_2
+      - sensor.dark_sky_precip_intensity_3
+      - sensor.dark_sky_precip_intensity_4
+      - sensor.dark_sky_precip_intensity_5
+      - sensor.dark_sky_precip_probability
+      - sensor.dark_sky_precip_probability_0
+      - sensor.dark_sky_precip_probability_1
+      - sensor.dark_sky_precip_probability_2
+      - sensor.dark_sky_precip_probability_3
+      - sensor.dark_sky_precip_probability_4
+      - sensor.dark_sky_precip_probability_5
+      - sensor.dark_sky_pressure
+      - sensor.dark_sky_pressure_1
+      - sensor.dark_sky_pressure_2
+      - sensor.dark_sky_pressure_3
+      - sensor.dark_sky_pressure_4
+      - sensor.dark_sky_pressure_5
+      - sensor.dark_sky_summary
+      - sensor.dark_sky_summary_0
+      - sensor.dark_sky_summary_1
+      - sensor.dark_sky_summary_2
+      - sensor.dark_sky_summary_3
+      - sensor.dark_sky_summary_4
+      - sensor.dark_sky_summary_5
+      - sensor.dark_sky_temperature
+      - sensor.dark_sky_uv_index
+      - sensor.dark_sky_uv_index_0
+      - sensor.dark_sky_uv_index_1
+      - sensor.dark_sky_uv_index_2
+      - sensor.dark_sky_uv_index_3
+      - sensor.dark_sky_uv_index_4
+      - sensor.dark_sky_uv_index_5
+      - sensor.dark_sky_visibility
+      - sensor.dark_sky_visibility_0
+      - sensor.dark_sky_visibility_1
+      - sensor.dark_sky_visibility_2
+      - sensor.dark_sky_visibility_3
+      - sensor.dark_sky_visibility_4
+      - sensor.dark_sky_visibility_5
+      - sensor.dark_sky_wind_bearing
+      - sensor.dark_sky_wind_bearing_0
+      - sensor.dark_sky_wind_bearing_1
+      - sensor.dark_sky_wind_bearing_2
+      - sensor.dark_sky_wind_bearing_3
+      - sensor.dark_sky_wind_bearing_4
+      - sensor.dark_sky_wind_bearing_5
+      - sensor.dark_sky_wind_speed
+      - sensor.dark_sky_wind_speed_0
+      - sensor.dark_sky_wind_speed_1
+      - sensor.dark_sky_wind_speed_2
+      - sensor.dark_sky_wind_speed_3
+      - sensor.dark_sky_wind_speed_4
+      - sensor.dark_sky_wind_speed_5
+
+frontend:
+  themes: !include_dir_merge_named themes
+  javascript_version: latest
+
+ffmpeg:
+  ffmpeg_bin: /usr/bin/ffmpeg
+
+google:
+  client_id: !secret google_client_id
+  client_secret: !secret google_client_secret
+
+google_assistant:
+  project_id: !secret google_assistant_project_id
+  api_key: !secret google_assistant_api_key
+  expose_by_default: true
+  entity_config:
+    script.turn_on_kitchen_light:
+      expose: false
+    script.turn_off_kitchen_light:
+      expose: false
+    input_boolean.kitchen_light:
+      expose: false
+    script.turn_on_speaker_light:
+      expose: false
+    script.turn_off_speaker_light:
+      expose: false
+    input_boolean.speaker_light:
+      expose: false
+    switch.speaker_light:
+      expose: false
+    switch.kitchen_light:
+      expose: false

@@ -1,0 +1,12 @@
+############################################
+##           Netgear GS108PE              ##
+############################################
+###### SENSORS -----------------------------
+sensor:
+  - platform: template
+    sensors:
+      gs108pe:
+        friendly_name: Netgear GS108PE
+        value_template: "{% if is_state('device_tracker.gs108pe', 'home') %}Connected{% else %}!no-reply, please check!{% endif %}"
+        icon_template: "{% if is_state('device_tracker.gs108pe', 'home') %} mdi:router-wireless{% else %}mdi:lan-disconnect{% endif %}"
+#        icon_color: if (state === 'Connected') return [251, 210, 41]; else return [54, 95, 140];

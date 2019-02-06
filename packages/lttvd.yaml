@@ -1,0 +1,11 @@
+############################################
+##                Laptop Me               ##
+############################################
+###### SENSORS -----------------------------
+sensor:
+  - platform: template
+    sensors:
+      lttvd:
+        friendly_name: Laptop TVD
+        value_template: "{% if is_state('device_tracker.ltthomas', 'home') %}Connected{% else %}Offline{% endif %}"
+        icon_template: "{% if is_state('device_tracker.ltthomas', 'home') %} mdi:laptop-windows{% else %}mdi:lan-disconnect{% endif %}"

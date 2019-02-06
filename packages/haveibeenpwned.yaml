@@ -1,0 +1,10 @@
+############################################
+##           HaveIBeenPwned SENSOR        ##
+############################################
+###### SENSORS -----------------------------
+sensor:
+  - platform: haveibeenpwned
+    email:
+      - !secret my_email
+      - !secret my_work_email
+      - !secret wife_email

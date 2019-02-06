@@ -1,0 +1,8 @@
+############################################
+##                 PostNL                 ##
+############################################
+###### SENSORS -----------------------------
+sensor:
+  - platform: postnl
+    username: !secret my_email
+    password: !secret htpc_01_password

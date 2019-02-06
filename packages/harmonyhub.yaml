@@ -1,0 +1,68 @@
+############################################
+##        Logitech Harmony Hub            ##
+############################################
+###### SENSORS -----------------------------
+sensor:
+  - platform: template
+    sensors:
+      harmony_hub:
+        friendly_name: HarmonyHub
+        value_template: "{% if is_state('device_tracker.harmony_hub', 'home') %}Connected{% else %}!no-reply, please check!{% endif %}"
+        icon_template: "{% if is_state('device_tracker.harmony_hub', 'home') %} mdi:remote{% else %}mdi:lan-disconnect{% endif %}"
+
+  - platform: template
+    sensors:
+      harmony_activity:
+        value_template: >
+          {% if is_state("remote.harmony_hub", 'on') %}
+            {{ states.remote.harmony_hub.attributes.current_activity }}
+          {% else %}
+            PowerOff
+          {% endif %}
+        friendly_name: Current Activity
+
+###### REMOTES -----------------------------
+remote:
+  - platform: harmony
+    name: harmony_hub
+    host: 10.3.1.6
+    delay_secs: 10
+    
+###### INPUT SELECTS -----------------------
+input_select:
+  harmony:
+    name: "Harmony Hub Living Room"
+    options:
+    - "Films & TV Shows"
+    - "Klimaatbeheer"
+    - "Lichtbeheer"
+    - "Spotify"
+    - "YouTube"
+    - "Ziggo TV"
+    - "PowerOff"
+    icon: mdi:gesture-tap
+    initial: "PowerOff"
+
+###### AUTOMATIONS -------------------------
+automation:
+  - alias: "Watch TV started from harmony hub"
+    trigger:
+      platform: state
+      entity_id: remote.family_room
+    condition:
+      condition: template
+      value_template: '{{ trigger.to_state.attributes.current_activity == "Kodi" }}'
+    action:
+      service: input_boolean.turn_on
+      entity_id: input_boolean.notify
+
+  - alias: "PowerOff started from harmony hub"
+    trigger:
+      platform: state
+      entity_id: remote.family_room
+    condition:
+      condition: template
+      value_template: '{{ trigger.to_state.attributes.current_activity == "PowerOff" }}'
+    action:
+      service: input_boolean.turn_off
+      entity_id: input_boolean.notify

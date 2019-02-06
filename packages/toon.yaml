@@ -1,0 +1,11 @@
+############################################
+##                  Toon                  ##
+############################################
+###### SENSORS -----------------------------
+sensor:
+  - platform: template
+    sensors:
+      toon:
+        friendly_name: Toon
+        value_template: "{% if is_state('device_tracker.toon', 'home') %}Connected{% else %}!no-reply, please check!{% endif %}"
+        icon_template: "{% if is_state('device_tracker.toon', 'home') %} mdi:flash{% else %}mdi:lan-disconnect{% endif %}"

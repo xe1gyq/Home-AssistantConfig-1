@@ -1,0 +1,14 @@
+# Ignore files and folders.
+.cloud
+.git
+.storage
+deps
+tts
+.google.token
+.shopping_list.json
+.uuid
+home-assistant_v2.db
+home-assistant.log
+ip_bans.yaml
+secrets.yaml
+hass_radarr_search_by_voice.py

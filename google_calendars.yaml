@@ -1,0 +1,42 @@
+
+- cal_id: !secret wij_email
+  entities:
+  - device_id: wij
+    ignore_availability: true
+    name: Wij
+    track: true
+
+- cal_id: !secret wife_email
+  entities:
+  - device_id: !secret wife_calendar
+    ignore_availability: true
+    name: !secret wife_email
+    track: true
+
+- cal_id: !secret my_email
+  entities:
+  - device_id: !secret my_calendar
+    ignore_availability: true
+    name: !secret my_email
+    track: true
+
+- cal_id: '#contacts@group.v.calendar.google.com'
+  entities:
+  - device_id: contacts
+    ignore_availability: true
+    name: Contacts
+    track: true
+
+- cal_id: nl.dutch#holiday@group.v.calendar.google.com
+  entities:
+  - device_id: feestdagen_in_nederland
+    ignore_availability: true
+    name: Feestdagen in Nederland
+    track: true
+
+- cal_id: p#weeknum@group.v.calendar.google.com
+  entities:
+  - device_id: week_numbers
+    ignore_availability: true
+    name: Week Numbers
+    track: true

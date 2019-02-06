@@ -1,0 +1,17 @@
+############################################
+##           IIIdefcontowerIII            ##
+############################################
+###### SWITCHES ----------------------------
+switch:
+   - platform: wake_on_lan
+     mac_address: "70:4D:7B:2D:43:09"
+     name: Wake IIIdefcontowerIII
+
+###### SENSORS -----------------------------
+sensor:
+  - platform: template
+    sensors:
+      iiidefcontoweriii:
+        friendly_name: IIIdefcontowerIII
+        value_template: "{% if is_state('device_tracker.iiidefcontoweriii', 'home') %}Connected{% else %}Offline{% endif %}"
+        icon_template: "{% if is_state('device_tracker.iiidefcontoweriii', 'home') %} mdi:desktop-tower{% else %}mdi:lan-disconnect{% endif %}"

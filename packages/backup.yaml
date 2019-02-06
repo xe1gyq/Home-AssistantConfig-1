@@ -1,0 +1,28 @@
+############################################
+##                  BACKUP                ##
+############################################
+###### CUSTOMIZATIONS-----------------------
+homeassistant:
+  customize:
+    script.backup:
+      icon: mdi:backup-restore
+      friendly_name: Backup Home Assistant
+
+###### SCRIPTS -----------------------------
+script:
+  backuplocal:
+    alias: Backup local
+    sequence:
+      - alias: Backup local
+        service: shell_command.backuplocal
+
+  backupgithub:
+    alias: Backup github
+    sequence:
+      - alias: Backup github
+        service: shell_command.backupgithub
+
+###### SHELL COMMANDS ----------------------
+shell_command:
+  backuplocal: bash /home/homeassistant/.homeassistant/scripts/backuplocal.sh
+  backupgithub: bash /home/homeassistant/.homeassistant/scripts/gitupdate.sh
