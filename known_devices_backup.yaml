@@ -102,7 +102,7 @@ googlehome:
   name: Google Home
   picture:
   track: true
-  
+
 sharple60:
   hide_if_away: false
   icon: mdi:television-box
@@ -209,4 +209,106 @@ kk:
   picture: /local/icons/avatars/KK.png
   track: true
 
+google_home:
+  hide_if_away: false
+  icon:
+  mac: BT_20:DF:B9:87:ED:91
+  name: Google Home
+  picture:
+  track: true
 
+10_3_1_9_00_09_dd_50_8a_1f:
+  hide_if_away: false
+  icon:
+  mac: 10.3.1.9_00:09:DD:50:8A:1F
+  name: 10.3.1.9 00:09:dd:50:8a:1f
+  picture:
+  track: true
+
+10_3_1_9_6b_ab_ab_c3_66_4f:
+  hide_if_away: false
+  icon:
+  mac: 10.3.1.9_6B:AB:AB:C3:66:4F
+  name: 10.3.1.9 6b:ab:ab:c3:66:4f
+  picture:
+  track: true
+
+10_3_1_9_5b_9a_7e_8f_e5_d0:
+  hide_if_away: false
+  icon:
+  mac: 10.3.1.9_5B:9A:7E:8F:E5:D0
+  name: 10.3.1.9 5b:9a:7e:8f:e5:d0
+  picture:
+  track: true
+
+5c_a3_9d_f1_08_da:
+  hide_if_away: false
+  icon:
+  mac: 5C:A3:9D:F1:08:DA
+  name: 5c a3 9d f1 08 da
+  picture:
+  track: true
+
+e8_d8_19_7d_9f_bd:
+  hide_if_away: false
+  icon:
+  mac: E8:D8:19:7D:9F:BD
+  name: e8 d8 19 7d 9f bd
+  picture:
+  track: true
+
+galaxy_j6:
+  hide_if_away: false
+  icon:
+  mac: 68:E7:C2:17:01:AB
+  name: Galaxy-J6
+  picture:
+  track: true
+
+10_3_1_9_59_76_c1_f8_ee_3b:
+  hide_if_away: false
+  icon:
+  mac: 10.3.1.9_59:76:C1:F8:EE:3B
+  name: 10.3.1.9 59:76:c1:f8:ee:3b
+  picture:
+  track: true
+
+oneplus_3:
+  hide_if_away: false
+  icon:
+  mac: C0:EE:FB:DB:1E:F1
+  name: OnePlus 3
+  picture:
+  track: true
+
+htpc_01:
+  hide_if_away: false
+  icon:
+  mac: 48:5D:60:19:7B:F6
+  name: HTPC-01
+  picture:
+  track: true
+
+10_3_1_9_63_5f_4a_c5_f1_4a:
+  hide_if_away: false
+  icon:
+  mac: 10.3.1.9_63:5F:4A:C5:F1:4A
+  name: 10.3.1.9 63:5f:4a:c5:f1:4a
+  picture:
+  track: true
+
+10_3_1_9_6f_20_f0_f7_f1_53:
+  hide_if_away: false
+  icon:
+  mac: 10.3.1.9_6F:20:F0:F7:F1:53
+  name: 10.3.1.9 6f:20:f0:f7:f1:53
+  picture:
+  track: true
+
+10_3_1_9_94_0e_6b_90_95_b9:
+  hide_if_away: false
+  icon:
+  mac: 10.3.1.9_94:0E:6B:90:95:B9
+  name: 10.3.1.9 94:0e:6b:90:95:b9
+  picture:
+  track: true
