@@ -1,0 +1,23 @@
+############################################
+##            Public Transport            ##
+############################################
+###### SENSORS -----------------------------
+###### TRAM 23 -----------------------------
+sensor:
+  - platform: ovapi
+    name: Tram 23
+    timing_point_code: '31000227'
+#    line_filter: 2, 6
+    show_future_departures: 4
+
+###### BUS 140 -----------------------------
+  - platform: ovapi
+    name: Bus 140
+    timing_point_code: '31006183'
+    show_future_departures: 4
+
+###### BUS 183 -----------------------------
+  - platform: ovapi
+    name: Bus 183
+    timing_point_code: '31006177'
+    show_future_departures: 4

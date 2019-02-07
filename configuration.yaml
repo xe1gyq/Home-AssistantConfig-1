@@ -20,6 +20,8 @@ http:
   login_attempts_threshold: 5
   base_url: !secret http_base_url
 
+system_health:
+
 #lovelace:
 #  mode: yaml
 #shopping_list:

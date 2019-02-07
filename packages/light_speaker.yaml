@@ -16,9 +16,6 @@ homeassistant:
       icon: mdi:brightness-6
     script.speaker_light_blue:
       icon: mdi:palette
-      templates:
-        icon_color: >
-          if (state === 'on') return 'rgb(251, 210, 41)'; return 'rgb(54, 95, 140)';
     script.speaker_light_green:
       icon: mdi:palette
     script.speaker_light_lightblue:

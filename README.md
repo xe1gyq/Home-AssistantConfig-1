@@ -21,3 +21,4 @@ The Google Assistant is also intergrated with hass.io and Harmony.
 ![Alt text](https://github.com/IIIdefconIII/Home-AssistantConfig/blob/master/screenshots/screenshot_13.png?raw=true "Title")
 ![Alt text](https://github.com/IIIdefconIII/Home-AssistantConfig/blob/master/screenshots/screenshot_14.png?raw=true "Title")
 ![Alt text](https://github.com/IIIdefconIII/Home-AssistantConfig/blob/master/screenshots/screenshot_15.png?raw=true "Title")
+![Alt text](https://github.com/IIIdefconIII/Home-AssistantConfig/blob/master/screenshots/screenshot_16.png?raw=true "Title")
