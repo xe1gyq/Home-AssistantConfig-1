@@ -1,0 +1,17 @@
+############################################
+##              Camera Tablet                ##
+############################################
+###### SENSORS -----------------------------
+sensor:
+  - platform: template
+    sensors:
+      camera_tablet:
+        friendly_name: Camera Tablet
+        value_template: "{% if is_state('camera.camera_tablet', 'idle') %}Connected{% else %}!no-reply, please check!{% endif %}"
+        icon_template: "{% if is_state('camera.camera_tablet', 'idle') %} mdi:cctv{% else %}mdi:lan-disconnect{% endif %}"
+
+###### CAMERAS -----------------------------
+camera:
+  - platform: mjpeg
+    name: Camera Tablet
+    mjpeg_url: http://10.3.1.17:6080/video

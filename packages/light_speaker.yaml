@@ -4,29 +4,29 @@
 ###### CUSTOMIZATIONS-----------------------
 homeassistant:
   customize:
-    script.speaker_light_on:
+    script.speakerlighton:
       icon: mdi:lightbulb-on-outline
-    script.speaker_light_off:
+    script.speakerlightoff:
       icon: mdi:lightbulb
-    script.speaker_light_:
+    script.speakerlightfade:
       icon: mdi:all-inclusive
-    script.speaker_light_bright:
+    script.speakerlightbright:
       icon: mdi:brightness-5
-    script.speaker_light_dim:
+    script.speakerlightdim:
       icon: mdi:brightness-6
-    script.speaker_light_blue:
+    script.speakerlightblue:
       icon: mdi:palette
-    script.speaker_light_green:
+    script.speakerlightgreen:
       icon: mdi:palette
-    script.speaker_light_lightblue:
+    script.speakerlightlightblue:
       icon: mdi:palette
-    script.speaker_light_pink:
+    script.speakerlightpink:
       icon: mdi:palette
-    script.speaker_light_purple:
+    script.speakerlightpurple:
       icon: mdi:palette
-    script.speaker_light_red:
+    script.speakerlightred:
       icon: mdi:palette
-    script.speaker_light_yellow:
+    script.speakerlightyellow:
       icon: mdi:palette
 
 ###### SCRIPTS -----------------------------
@@ -53,7 +53,7 @@ script:
             - "Light2"
           delay_secs: 2
 
-  speaker_light_dim:
+  speakerlightdim:
     alias: Speaker Light Dim
     sequence:
       - service: remote.send_command
@@ -62,7 +62,7 @@ script:
           device: "42458306"
           command: "dim"
 
-  speaker_light_bright:
+  speakerlightbright:
     alias: Speaker Light Bright
     sequence:
       - service: remote.send_command
@@ -71,7 +71,7 @@ script:
           device: "42458306"
           command: "bright"
 
-  speaker_light_fade:
+  speakerlightfade:
     alias: Speaker Light Fade
     sequence:
       - service: remote.send_command
@@ -80,7 +80,7 @@ script:
           device: "42458306"
           command: "fade"
 
-  speaker_light_blue:
+  speakerlightblue:
     alias: Speaker Light Blue
     sequence:
       - service: remote.send_command
@@ -89,7 +89,7 @@ script:
           device: "42458306"
           command: "blue"
 
-  speaker_light_green:
+  speakerlightgreen:
     alias: Speaker Light Green
     sequence:
       - service: remote.send_command
@@ -98,7 +98,7 @@ script:
           device: "42458306"
           command: "green"
 
-  speaker_light_lightblue:
+  speakerlightlightblue:
     alias: Speaker Light  Blue
     sequence:
       - service: remote.send_command
@@ -107,7 +107,7 @@ script:
           device: "42458306"
           command: "lightblue"
 
-  speaker_light_pink:
+  speakerlightpink:
     alias: Speaker Light Pink
     sequence:
       - service: remote.send_command
@@ -116,7 +116,7 @@ script:
           device: "42458306"
           command: "pink"
 
-  speaker_light_purple:
+  speakerlightpurple:
     alias: Speaker Light Purple
     sequence:
       - service: remote.send_command
@@ -125,7 +125,7 @@ script:
           device: "42458306"
           command: "purple"
 
-  speaker_light_red:
+  speakerlightred:
     alias: Speaker Light Red
     sequence:
       - service: remote.send_command
@@ -134,7 +134,7 @@ script:
           device: "42458306"
           command: "red"
 
-  speaker_light_yellow:
+  speakerlightyellow:
     alias: Speaker Light Yellow
     sequence:
       - service: remote.send_command

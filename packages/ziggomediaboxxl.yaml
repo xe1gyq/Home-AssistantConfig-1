@@ -2,7 +2,6 @@
 ##            Ziggo Horizonbox            ##
 ############################################
 ###### CUSTOMIZATIONS-----------------------
-
 homeassistant:
   customize:
     script.ziggo_tv_living_room:

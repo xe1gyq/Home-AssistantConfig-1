@@ -15,11 +15,11 @@ defap01:
   picture:
   track: true
 
-defcam01:
+camera_kitchen:
   hide_if_away: false
   icon: mdi:cctv
   mac: 00:0C:43:20:03:7C
-  name: defcam01
+  name: Camera Kitchen
   picture:
   track: true
 
@@ -177,11 +177,11 @@ rs:
   picture: /local/icons/avatars/RS.png
   track: true
 
-defcam02:
+camera_tv:
   hide_if_away: false
   icon:
   mac: 00:62:6E:46:AD:54
-  name: DEF-CAM-02
+  name: Camera TV
   picture:
   track: true
 
@@ -257,14 +257,6 @@ e8_d8_19_7d_9f_bd:
   picture:
   track: true
 
-galaxy_j6:
-  hide_if_away: false
-  icon:
-  mac: 68:E7:C2:17:01:AB
-  name: Galaxy-J6
-  picture:
-  track: true
-
 10_3_1_9_59_76_c1_f8_ee_3b:
   hide_if_away: false
   icon:
@@ -310,5 +302,29 @@ htpc_01:
   icon:
   mac: 10.3.1.9_94:0E:6B:90:95:B9
   name: 10.3.1.9 94:0e:6b:90:95:b9
+  picture:
+  track: true
+
+10_3_1_9_c8_3d_97_74_d0_19:
+  hide_if_away: false
+  icon:
+  mac: 10.3.1.9_C8:3D:97:74:D0:19
+  name: 10.3.1.9 c8:3d:97:74:d0:19
+  picture:
+  track: true
+
+philips_hue:
+  hide_if_away: false
+  icon:
+  mac: 00:17:88:10:B7:80
+  name: Philips-hue
+  picture:
+  track: true
+
+galaxy_j6_zr:
+  hide_if_away: false
+  icon: /local/icons/avatars/tepanja.png
+  mac: 68:E7:C2:17:01:AB
+  name: Galaxy-J6
   picture:
   track: true

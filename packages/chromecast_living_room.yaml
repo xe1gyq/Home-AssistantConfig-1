@@ -7,7 +7,7 @@ homeassistant:
     sensor.chromecast_living_room:
       templates:
         icon_color: >-
-          if (state === 'Connected') return 'rgb(0, 171, 0)'; 
+          if (state === 'Connected') return 'rgb(0, 171, 0)';
           return 'rgb(255, 0, 0)';
 
 ###### SENSORS -----------------------------
@@ -28,6 +28,10 @@ automation:
       from: 'off'
       platform: state
       to: 'playing'
+    - entity_id: media_player.chromecast_living_room
+      from: 'off'
+      platform: state
+      to: 'idle'
     action:
       service: script.turn_on
       entity_id: script.netflix_living_room

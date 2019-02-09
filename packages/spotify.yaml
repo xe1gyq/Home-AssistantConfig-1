@@ -1,11 +1,11 @@
 ############################################
-##                Youtube                 ##
+##                Spotify                 ##
 ############################################
 ###### SCRIPTS -----------------------------
 script:
-  youtube_living_room:
+  spotify:
     sequence:
       - service: remote.turn_on
         entity_id: remote.harmony_hub
         data:
-          activity: "30887004"
+          activity: "30886837"

@@ -1,15 +1,15 @@
 ############################################
-##               Light Kitchen            ##
+##           Light kitchen cooking        ##
 ############################################
 ###### CUSTOMIZATIONS-----------------------
 homeassistant:
   customize:
     script.woonkamer_movies_tvshows:
-      icon: mdi:lightbulb      
+      icon: mdi:lightbulb
 
 ###### SCRIPTS -----------------------------
 script:
-  turn_on_kitchen_light:
+  turn_on_cooking_light:
     sequence:
       - service: remote.send_command
         entity_id: remote.harmony_hub
@@ -20,7 +20,7 @@ script:
             - "Light3"
           delay_secs: 2
 
-  turn_off_kitchen_light:
+  turn_off_cooking_light:
     sequence:
       - service: remote.send_command
         entity_id: remote.harmony_hub
@@ -33,32 +33,32 @@ script:
 
 ###### INPUT BOOLEANS ----------------------
 input_boolean:
-  kitchen_light:
-    name: Kitchen light
+  cooking_light:
+    name: cooking light
     icon: mdi:lightbulb
 
 ###### SWITCHES ----------------------------
 switch:
    - platform: template
      switches:
-       kitchen_light:
-         friendly_name: Kitchen Light
-         value_template: "{{ is_state('input_boolean.kitchen_light', 'on') }}"
+       cooking_light:
+         friendly_name: cooking light
+         value_template: "{{ is_state('input_boolean.cooking_light', 'on') }}"
          turn_on:
           - service: script.turn_on
-            entity_id: script.turn_on_kitchen_light
+            entity_id: script.turn_on_cooking_light
           - service: input_boolean.turn_on
             data:
-              entity_id: input_boolean.kitchen_light
+              entity_id: input_boolean.cooking_light
          turn_off:
           - service: script.turn_on
-            entity_id: script.turn_off_kitchen_light
+            entity_id: script.turn_off_cooking_light
           - service: input_boolean.turn_off
             data:
-              entity_id: input_boolean.kitchen_light
+              entity_id: input_boolean.cooking_light
 
 ###### LIGHTS ------------------------------
 light:
   - platform: switch
-    name: Kitchen Light
-    entity_id: switch.kitchen_light
+    name: Cooking Light
+    entity_id: switch.cooking_light

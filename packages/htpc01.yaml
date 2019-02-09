@@ -8,9 +8,6 @@ homeassistant:
       icon: mdi:filmstrip
     script.update_library:
       icon: mdi:kodi
-    script.start_kodi:
-      icon: mdi:kodi
-      friendly_name: Start Kodi
     script.lastmovies:
       icon: mdi:television-box
       friendly_name: Last Movies
@@ -102,13 +99,6 @@ sensor:
             mdi:checkbox-blank-outline
           {% endif %}
 
-##### UPTIME
-  - platform: template
-    sensors:
-      since_last_boot_templated:
-        friendly_name: since_last_boot_templated
-        value_template: "{{ states.sensor.since_last_boot.state.split('.')[0] }}"
-
 ##### HTPC01
   - platform: template
     sensors:
@@ -116,3 +106,8 @@ sensor:
         friendly_name: Kodi HTPC-01
         value_template: "{% if is_state('device_tracker.htpc01', 'home') %}Connected{% else %}!no-reply, please check!{% endif %}"
         icon_template: "{% if is_state('device_tracker.htpc01', 'home') %} mdi:kodi{% else %}mdi:lan-disconnect{% endif %}"
+
+weblink:
+  entities:
+    - name: ssllabs
+      url: https://www.ssllabs.com/ssltest/analyze.html?d=homeassistant.iiidefconiii.nl

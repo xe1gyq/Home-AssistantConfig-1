@@ -4,14 +4,28 @@
 ###### LIGHT GROUPS ------------------------
 light:
   - platform: group
-    name: Main Lights
+    name: Group TV Lights
     entities:
       - light.speaker_light
       - light.hyperion
 
   - platform: group
-    name: All Lights
+    name: Group Main Lights
+    entities:
+      - light.living_room
+      - light.hue_color_light_2
+
+  - platform: group
+    name: Group Kitchen Lights
+    entities:
+      - light.cooking_light
+      - light.hue_color_light_2
+
+  - platform: group
+    name: Group All Lights
     entities:
       - light.speaker_light
-      - light.kitchen_light
+      - light.cooking_light
       - light.hyperion
+      - light.living_room
+      - light.hue_color_light_2

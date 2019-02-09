@@ -1,13 +1,6 @@
 ############################################
 ##                Netflix                 ##
 ############################################
-###### CUSTOMIZATIONS-----------------------
-homeassistant:
-  customize:
-    script.netflix_living_room:
-      icon: mdi:netflix
-      friendly_name: Netflix
-
 ###### SCRIPTS -----------------------------
 script:
   netflix_living_room:

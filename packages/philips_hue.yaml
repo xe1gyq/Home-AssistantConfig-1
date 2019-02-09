@@ -1,0 +1,11 @@
+############################################
+##             Philips Hue                ##
+############################################
+###### SENSORS -----------------------------
+sensor:
+  - platform: template
+    sensors:
+      philips_hue:
+        friendly_name: Philips Hue Bridge
+        value_template: "{% if is_state('device_tracker.philips_hue', 'home') %}Connected{% else %}!no-reply, please check!{% endif %}"
+        icon_template: "{% if is_state('device_tracker.philips_hue', 'home') %} mdi:lightbulb{% else %}mdi:lan-disconnect{% endif %}"
