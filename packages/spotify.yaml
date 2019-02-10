@@ -5,7 +5,27 @@
 script:
   spotify:
     sequence:
-      - service: remote.turn_on
+      - service: remote.send_command
         entity_id: remote.harmony_hub
         data:
-          activity: "30886837"
+          device: "42458300"
+          command:
+            - "PowerOn"
+            - "InputDvd"
+
+###### AUTOMATIONS -------------------------
+automation:
+  - alias: Power on receiver when starting spotify
+    initial_state: 'on'
+    trigger:
+    - entity_id: media_player.chromecast_living_room
+      platform: state
+      to: 'playing'
+    action:
+      service: remote.send_command
+      entity_id: remote.harmony_hub
+      data:
+        device: "42458300"
+        command:
+          - "PowerOn"
+          - "InputDvd"

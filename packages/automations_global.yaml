@@ -78,3 +78,16 @@ automation:
       service: frontend.set_theme
       data:
         name: dark_red
+
+###### Power on lights after sunset and a running activity -------------
+  - alias: 'Power on lights after sunset and a running activity'
+    initial_state: 'on'
+    trigger:
+    - entity_id: remote.harmony_hub
+      platform: state
+      from: 'PowerOff'
+#    - condition: sun
+#      after: sunset
+    action:
+      service: light.turn_on
+      entity_id: light.group_tv_lights
