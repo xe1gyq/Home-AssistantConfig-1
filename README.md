@@ -2,7 +2,7 @@
 
 This is my first Home Assistant Project!
 
-Intergrated:<br />
+Intergrated:
 Bus Times
 Cameras
 Carbage Pickup
