@@ -25,11 +25,8 @@ automation:
         entity_id: light.hyperion
         to: 'on'
     action:
+      - delay: 00:00:03
       - service: light.turn_on
         data:
           entity_id: light.hyperion
           effect: "Full color mood blobs"
-
-#    action:
-#      - delay: '00:00:20'
-#      - service: script.set_hyperion_effect

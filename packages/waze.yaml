@@ -32,4 +32,3 @@ sensor:
     destination: !secret wife_work_zone2
     region: EU
     name: !secret wife_to_work2
-

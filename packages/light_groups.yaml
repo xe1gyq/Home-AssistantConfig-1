@@ -6,26 +6,31 @@ light:
   - platform: group
     name: Group TV Lights
     entities:
-      - light.speaker_light
       - light.hyperion
+      - light.speaker_light
 
   - platform: group
     name: Group Main Lights
     entities:
-      - light.living_room
-      - light.hue_color_light_2
+      - light.bedroom_ceiling_light
+      - light.kitchen_ceiling_light
 
   - platform: group
     name: Group Kitchen Lights
     entities:
+      - light.kitchen_ceiling_light
       - light.cooking_light
-      - light.hue_color_light_2
 
+  - platform: group
+    name: Group Bedroom Lights
+    entities:
+      - light.bedroom_ceiling_light
+      
   - platform: group
     name: Group All Lights
     entities:
       - light.speaker_light
       - light.cooking_light
       - light.hyperion
-      - light.living_room
-      - light.hue_color_light_2
+      - light.bedroom_ceiling_light
+      - light.kitchen_ceiling_light
