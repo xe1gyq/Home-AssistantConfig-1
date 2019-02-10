@@ -2,30 +2,30 @@
 
 This is my first Home Assistant Project!
 
-Intergrated:
-Bus Times
-Cameras
-Carbage Pickup
-Dark sky weather
-Device online status
-Google Calendar
-Google Cast
-HaveIBeenPwned
-IFTTT
-Kodi
-Logitech Harmony
-Netflix
-Network Peformance
-OwnTracks
-Philips Hue
-PostNL
-Radarr
-Sonarr
-Spotify
-todoist
-Windy
-Youtube
-Ziggo TV
+Intergrated:<br />
+Bus Times<br />
+Cameras<br />
+Carbage Pickup<br />
+Dark sky weather<br />
+Device online stat<br />us
+Google Calendar<br />
+Google Cast<br />
+HaveIBeenPwned<br />
+IFTTT<br />
+Kodi<br />
+Logitech Harmony<br />
+Netflix<br />
+Network Peformance<br />
+OwnTracks<br />
+Philips Hue<br />
+PostNL<br />
+Radarr<br />
+Sonarr<br />
+Spotify<br />
+todoist<br />
+Windy<br />
+Youtube<br />
+Ziggo TV<br />
 
 ![Alt text](https://github.com/IIIdefconIII/Home-AssistantConfig/blob/master/screenshots/screenshot_1.png?raw=true "Title")
 ![Alt text](https://github.com/IIIdefconIII/Home-AssistantConfig/blob/master/screenshots/screenshot_2.png?raw=true "Title")
