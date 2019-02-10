@@ -14,10 +14,10 @@ HaveIBeenPwned<br />
 IFTTT<br />
 Kodi<br />
 Logitech Harmony<br />
- - Klik aan klik uit<br />
- - Pioneer VSX 922<br />
- - Sharp TV<br />
- - Chromecast<br />
+  Klik aan klik uit<br />
+  Pioneer VSX 922<br />
+  Sharp TV<br />
+  Chromecast<br />
 Netflix<br />
 Network Peformance<br />
 OwnTracks<br />
