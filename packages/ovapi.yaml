@@ -14,12 +14,12 @@ sensor:
   - platform: ovapi
     name: Bus 140
     timing_point_code: '31006183'
-    line_filter: 140
+#    line_filter: 140
     show_future_departures: 4
 
 ###### BUS 183 -----------------------------
   - platform: ovapi
     name: Bus 183
     timing_point_code: '31006177'
-    line_filter: 183
+#    line_filter: 183
     show_future_departures: 4
