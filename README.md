@@ -2,8 +2,30 @@
 
 This is my first Home Assistant Project!
 
-It may be configured not perfectly but the images below shows what works.
-The Google Assistant is also intergrated with hass.io and Harmony.
+Intergrated:
+Bus Times
+Cameras
+Carbage Pickup
+Dark sky weather
+Device online status
+Google Calendar
+Google Cast
+HaveIBeenPwned
+IFTTT
+Kodi
+Logitech Harmony
+Netflix
+Network Peformance
+OwnTracks
+Philips Hue
+PostNL
+Radarr
+Sonarr
+Spotify
+todoist
+Windy
+Youtube
+Ziggo TV
 
 ![Alt text](https://github.com/IIIdefconIII/Home-AssistantConfig/blob/master/screenshots/screenshot_1.png?raw=true "Title")
 ![Alt text](https://github.com/IIIdefconIII/Home-AssistantConfig/blob/master/screenshots/screenshot_2.png?raw=true "Title")
