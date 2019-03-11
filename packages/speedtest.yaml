@@ -2,9 +2,9 @@
 ##                 SPEEDTEST              ##
 ############################################
 ###### SENSORS -----------------------------
-sensor:
-  - platform: speedtest
-    monitored_conditions:
-    - ping
-    - download
-    - upload
+#sensor:
+#  - platform: speedtest
+#    monitored_conditions:
+#    - ping
+#    - download
+#    - upload

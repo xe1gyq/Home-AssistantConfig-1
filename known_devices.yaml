@@ -117,7 +117,7 @@ thomas_thomasgalaxys8:
   icon: mdi:cellphone-android
   mac: 30:07:4D:00:C9:15
   name: !secret my_name
-  picture: /local/icons/avatars/TVDhome.png
+  picture: /local/icons/avatars/TVD.png
   track: true
 
 joella_joellagalaxys8:
@@ -247,4 +247,132 @@ galaxy_j6_zr:
   mac: 68:E7:C2:17:01:AB
   name: Zefanja Ratnavelayutham
   picture: /local/icons/avatars/ZR.png?v=1
+  track: true
+
+5c_a3_9d_f1_08_da:
+  hide_if_away: false
+  icon:
+  mac: 5C:A3:9D:F1:08:DA
+  name: 5c a3 9d f1 08 da
+  picture:
+  track: true
+
+10_3_1_9_5d_a2_fd_b5_8b_db:
+  hide_if_away: false
+  icon:
+  mac: 10.3.1.9_5D:A2:FD:B5:8B:DB
+  name: 10.3.1.9 5d:a2:fd:b5:8b:db
+  picture:
+  track: true
+
+10_3_1_9_73_a2_aa_53_dd_03:
+  hide_if_away: false
+  icon:
+  mac: 10.3.1.9_73:A2:AA:53:DD:03
+  name: 10.3.1.9 73:a2:aa:53:dd:03
+  picture:
+  track: true
+
+10_3_1_9_51_dc_07_70_82_72:
+  hide_if_away: false
+  icon:
+  mac: 10.3.1.9_51:DC:07:70:82:72
+  name: 10.3.1.9 51:dc:07:70:82:72
+  picture:
+  track: true
+
+10_3_1_9_79_87_01_4c_a3_77:
+  hide_if_away: false
+  icon:
+  mac: 10.3.1.9_79:87:01:4C:A3:77
+  name: 10.3.1.9 79:87:01:4c:a3:77
+  picture:
+  track: true
+
+10_3_1_9_62_6b_80_4b_da_58:
+  hide_if_away: false
+  icon:
+  mac:
+  name: 10 3 1 9 62 6b 80 4b da 58
+  picture:
+  track: true
+
+lap16261:
+  hide_if_away: false
+  icon:
+  mac: 34:F6:4B:52:7F:D8
+  name: LAP16261
+  picture:
+  track: true
+
+10_3_1_9_57_5e_77_06_43_45:
+  hide_if_away: false
+  icon:
+  mac:
+  name: 10 3 1 9 57 5e 77 06 43 45
+  picture:
+  track: true
+
+10_3_1_9_56_3b_4e_09_90_41:
+  hide_if_away: false
+  icon:
+  mac:
+  name: 10 3 1 9 56 3b 4e 09 90 41
+  picture:
+  track: true
+
+10_3_1_9_40_52_f9_a9_c7_a6:
+  hide_if_away: false
+  icon:
+  mac:
+  name: 10 3 1 9 40 52 f9 a9 c7 a6
+  picture:
+  track: true
+
+1c_87_2c_b6_9b_ff:
+  hide_if_away: false
+  icon:
+  mac: 1C:87:2C:B6:9B:FF
+  name: 1c 87 2c b6 9b ff
+  picture:
+  track: true
+
+00_1d_aa_36_11_a0:
+  hide_if_away: false
+  icon:
+  mac: 00:1D:AA:36:11:A0
+  name: 00 1d aa 36 11 a0
+  picture:
+  track: true
+
+f8_46_1c_2a_5d_c1:
+  hide_if_away: false
+  icon:
+  mac: F8:46:1C:2A:5D:C1
+  name: f8 46 1c 2a 5d c1
+  picture:
+  track: true
+
+10_3_1_9_55_ba_23_fb_5a_bc:
+  hide_if_away: false
+  icon:
+  mac:
+  name: 10 3 1 9 55 ba 23 fb 5a bc
+  picture:
+  track: true
+
+google_maps_103516875542669772642:
+  hide_if_away: false
+  icon:
+  mac:
+  name: google maps 103516875542669772642
+  picture: https://lh3.googleusercontent.com/a-/AAuE7mAo9ApcV2ALN4h0IYMiL35uo4ptBiF4xzIyW85aIBc
+  track: true
+
+google_maps_joellapasschier_gmail_com:
+  hide_if_away: false
+  icon:
+  mac:
+  name: google maps joellapasschier gmail com
+  picture:
   track: true

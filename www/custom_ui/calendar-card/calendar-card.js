@@ -1,7 +1,5 @@
 class CalendarCard extends HTMLElement {
   set hass(hass) {
-    this._hass = hass;
-
     if (!this.content) {
       const card = document.createElement('ha-card');
       card.header = this.config.name;
@@ -9,18 +7,11 @@ class CalendarCard extends HTMLElement {
       this.content.style.padding = '0 16px 16px';
       card.appendChild(this.content);
       this.appendChild(card);
+      moment.locale(hass.language);
     }
 
-    this.init();
-  }
+    this._hass = hass;
 
-  init() {
-    if(typeof(moment) == "undefined") {
-      setTimeout(() => this.init(), 200);
-      return;
-    }
-
-    moment.locale(this._hass.language);
     this
       .getAllEvents(this.config.entities)
       .then(events => this.updateHtmlIfNecessary(events))
@@ -30,7 +21,7 @@ class CalendarCard extends HTMLElement {
   async getAllEvents(entities) {
     if(!this.lastUpdate || moment().diff(this.lastUpdate, 'minutes') > 15) {
       const start = moment().startOf('day').format("YYYY-MM-DDTHH:mm:ss");
-      const end = moment().startOf('day').add(7, 'days').format("YYYY-MM-DDTHH:mm:ss");
+      const end = moment().startOf('day').add(this.config.numberOfDays, 'days').format("YYYY-MM-DDTHH:mm:ss");
 
       let urls = entities.map(entity => `calendars/${entity}?start=${start}Z&end=${end}Z`);
       let allResults = await this.getAllUrls(urls)
@@ -183,8 +174,8 @@ class CalendarCard extends HTMLElement {
         <div class="event">
           <div class="info">
             <div class="summary">${event.title}</div>
-            ${event.location ? `<div class="location"><ha-icon icon="mdi:map-marker"></ha-icon>&nbsp;${event.location}</div>` : ''}
-
+            ${event.location ? `<div class="location"><ha-icon icon="mdi:map-marker"></ha-icon>&nbsp;
+            ${event.locationAddress ? `<a href="https://www.google.com/maps/place/${event.locationAddress}" target="_blank">${event.location}</a></div>` : `${event.location}</div>`}` : ''}
           </div>
           <div class="time">${event.isFullDayEvent ? 'All day' : (moment(event.startDateTime).format('HH:mm') + `-` + moment(event.endDateTime).format('HH:mm'))}</div>
         </div>
@@ -198,6 +189,7 @@ class CalendarCard extends HTMLElement {
     this.config = {
       name: 'Calendar',
       showProgressBar: true,
+      numberOfDays: 7,
       ...config
     };
   }
@@ -271,6 +263,14 @@ class GoogleCalendarEvent {
     return undefined;
   }
 
+  get locationAddress() {
+    if(this.googleCalendarEvent.location) {
+      let address = this.googleCalendarEvent.location.substring(this.googleCalendarEvent.location.indexOf(',') + 1);
+      return address.split(' ').join('+');
+    }
+    return undefined;
+  }
+
   get isFullDayEvent() {
     return this.googleCalendarEvent.start.date;
   }
@@ -301,6 +301,10 @@ class CalDavCalendarEvent {
     if(this.calDavCalendarEvent.location) {
       return this.calDavCalendarEvent.location;
     }
+    return undefined;
+  }
+
+  get locationAddress() {
     return undefined;
   }
 

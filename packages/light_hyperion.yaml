@@ -6,27 +6,3 @@ light:
   - platform: hyperion
     host: 127.0.0.1
     port: 19444
-
-###### SCRIPTS -----------------------------
-#script:
-#  set_hyperion_effect:
-#    sequence:
-#      - service: light.turn_on
-#        data:
-#          entity_id: light.hyperion
-#          effect: "Full color mood blobs"
-
-###### AUTOMATIONS -------------------------
-automation:
-  - alias: Turn hyperion effect on when light goes on
-    initial_state: 'on'
-    trigger:
-      - platform: state
-        entity_id: light.hyperion
-        to: 'on'
-    action:
-      - delay: 00:00:03
-      - service: light.turn_on
-        data:
-          entity_id: light.hyperion
-          effect: "Full color mood blobs"

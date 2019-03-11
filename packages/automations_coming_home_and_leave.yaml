@@ -1,0 +1,141 @@
+############################################
+##          AUTOMATIONS GLOBAL            ##
+############################################
+#https://www.home-assistant.io/docs/automation/trigger/
+#https://www.home-assistant.io/docs/automation/condition/
+#https://www.home-assistant.io/docs/automation/action/
+
+automation:
+
+###### Coming Home Thomas ------------------
+  - alias: 'Welcome Home Thomas'
+    initial_state: 'on'
+    trigger:
+      - platform: state
+        entity_id: input_boolean.tvd
+        to: 'on'
+    action:
+      - service: tts.google_say
+        entity_id: media_player.googlehome01
+        data:
+          message: 'Welcome home Thomas'
+
+###### Coming Home Joella ------------------
+  - alias: 'Welcome Home Joella'
+    initial_state: 'on'
+    trigger:
+      - platform: state
+        entity_id: input_boolean.jmp
+        to: 'on'
+    action:
+      - service: tts.google_say
+        entity_id: media_player.googlehome01
+        data:
+          message: 'Welcome home Joella'
+
+###### Coming Guest ------------------
+  - alias: 'Welcome Guest'
+    initial_state: 'on'
+    trigger:
+      - platform: state
+        entity_id: input_boolean.guest
+        to: 'on'
+    action:
+      - service: tts.google_say
+        entity_id: media_player.googlehome01
+        data:
+          message: 'Welcome guest'
+
+###### Leaving Home Everybody ------------------------
+  - alias: 'Leaving Home Everybody'
+    initial_state: 'on'
+    trigger:
+      - platform: state
+        entity_id: input_boolean.tvd
+        to: 'off'
+      - platform: state
+        entity_id: input_boolean.jmp
+        to: 'off'
+      - platform: state
+        entity_id: input_boolean.guest
+        to: 'off'
+    condition:
+      - condition: and
+        conditions:
+        - condition: state
+          entity_id: input_boolean.tvd
+          state: 'off'
+        - condition: state
+          entity_id: input_boolean.jmp
+          state: 'off'
+          state: 'off'
+        - condition: state
+          entity_id: input_boolean.guest
+          state: 'off'
+    action:
+      - delay: 00:00:08
+      - service: tts.google_say
+        entity_id: media_player.googlehome01
+        data:
+          message: 'Lock the doors'
+      - service: light.turn_off
+        entity_id: group.all_lights
+      - service: remote.turn_on
+        entity_id: remote.harmony_hub
+        data:
+          activity: "-1"
+      - service: media_player.turn_off
+        entity_id: media_player.chromecast_living_room
+
+###### Leaving Home Thomas ------------------------
+  - alias: 'Leaving Home Thomas'
+    initial_state: 'on'
+    trigger:
+      - platform: state
+        entity_id: input_boolean.tvd
+        to: 'off'
+    action:
+      - service: tts.google_say
+        entity_id: media_player.googlehome01
+        data:
+          message: 'Taking over control, see you later'
+
+###### Leaving Home Guest ------------------------
+  - alias: 'Leaving Home Guest'
+    initial_state: 'on'
+    trigger:
+      - platform: state
+        entity_id: input_boolean.Guest
+        to: 'off'
+    action:
+      - service: tts.google_say
+        entity_id: media_player.googlehome01
+        data:
+          message: 'Goodbye'
+
+###### Leaving Home Joella ------------------------
+  - alias: 'Leaving Home Joella'
+    initial_state: 'on'
+    trigger:
+      - platform: state
+        entity_id: input_boolean.jmp
+        to: 'off'
+    action:
+      - service: media_player.play_media
+        data_template:
+          entity_id: media_player.googlehome01
+          media_content_id: !secret shakethasassmp3
+          media_content_type: 'audio/mp3'
+
+input_boolean:
+  tvd:
+    name: Thomas Home
+    initial: off
+
+  jmp:
+    name: Joella Home
+    initial: off
+
+  guest:
+    name: Guest Mode
+    initial: off

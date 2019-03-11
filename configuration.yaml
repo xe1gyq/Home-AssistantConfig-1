@@ -15,7 +15,7 @@ homeassistant:
 
 config:
 http:
-#  api_password: !secret http_api_password
+  api_password: !secret http_api_password
   ip_ban_enabled: true
   login_attempts_threshold: 5
   base_url: !secret http_base_url
@@ -26,6 +26,7 @@ http:
     - 10.3.1.17
 
 system_health:
+speedtestdotnet:
 
 #lovelace:
 #  mode: yaml
@@ -34,8 +35,18 @@ system_health:
 #logger:
 
 custom_updater:
+#  mode: storage
+  show_installable: false
+  hide_sensor: false
+  track:
+    - components
+    - cards
+#    - python_scripts
   card_urls:
-    - https://raw.githubusercontent.com/kuuji/button-card/master/tracker.json
+    - https://raw.githubusercontent.com/rdehuyss/homeassistant-lovelace-google-calendar-card/master/custom_updater.json
+    - https://raw.githubusercontent.com/xirixiz/home-assistant-config/master/custom_updater.json
+    - https://raw.githubusercontent.com/ljmerza/light-entity-card/master/custom_updater.json
+    - https://raw.githubusercontent.com/Paul-dH/Home-Assisant-Sensor-OvApi/master/custom_components.json
 
 updater:
   reporting: false

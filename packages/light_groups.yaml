@@ -6,8 +6,8 @@ light:
   - platform: group
     name: Group TV Lights
     entities:
-      - light.hyperion
       - light.speaker_light
+      - light.hyperion
 
   - platform: group
     name: Group Main Lights
@@ -25,7 +25,7 @@ light:
     name: Group Bedroom Lights
     entities:
       - light.bedroom_ceiling_light
-      
+
   - platform: group
     name: Group All Lights
     entities:

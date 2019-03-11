@@ -27,7 +27,7 @@ remote:
     name: harmony_hub
     host: 10.3.1.6
     delay_secs: 10
-    
+
 ###### INPUT SELECTS -----------------------
 input_select:
   harmony:
@@ -42,27 +42,3 @@ input_select:
     - "PowerOff"
     icon: mdi:gesture-tap
     initial: "PowerOff"
-
-###### AUTOMATIONS -------------------------
-automation:
-  - alias: "Watch TV started from harmony hub"
-    trigger:
-      platform: state
-      entity_id: remote.family_room
-    condition:
-      condition: template
-      value_template: '{{ trigger.to_state.attributes.current_activity == "Kodi" }}'
-    action:
-      service: input_boolean.turn_on
-      entity_id: input_boolean.notify
-
-  - alias: "PowerOff started from harmony hub"
-    trigger:
-      platform: state
-      entity_id: remote.family_room
-    condition:
-      condition: template
-      value_template: '{{ trigger.to_state.attributes.current_activity == "PowerOff" }}'
-    action:
-      service: input_boolean.turn_off
-      entity_id: input_boolean.notify

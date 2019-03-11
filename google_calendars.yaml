@@ -40,3 +40,10 @@
     ignore_availability: true
     name: Week Numbers
     track: true
+
+- cal_id: 65lfsdclkc28g1qr6b69ma36ek@group.calendar.google.com
+  entities:
+  - device_id: sollicitaties
+    ignore_availability: true
+    name: Sollicitaties
+    track: true

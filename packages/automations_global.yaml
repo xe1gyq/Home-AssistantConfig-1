@@ -8,54 +8,6 @@
 ###### Coming Home after sunset ------------
 # Turns on lights 1 hour before sunset if people are home and if people get home between 16:00-23:00
 automation:
-  - alias: 'Welcome Home Night'
-    trigger:
-      - platform: sun
-        event: sunset
-        offset: '-01:00:00'
-      - platform: state
-        entity_id: !secret my_device_tracker
-        to: 'home'
-      - platform: state
-        entity_id: !secret wife_device_tracker
-        to: 'home'
-    condition:
-      - condition: time
-        after: '16:00:00'
-        before: '23:00:00'
-      - condition: or
-        conditions:
-        - condition: state
-          entity_id: !secret my_device_tracker
-          state: 'home'
-        - condition: state
-          entity_id: !secret wife_device_tracker
-          state: 'home'
-    action:
-      - service: input_boolean.turn_on
-        data:
-          entity_id: input_boolean.speaker_light
-      - service: light.turn_on
-        data:
-          entity_id: light.hyperion
-          effect: "Full color mood blobs"
-      - service: tts.google_say
-        data:
-          message: 'Welcome home master'
-
-###### Coming Home always ------------------
-  - alias: 'Welcome Home'
-    trigger:
-      - platform: state
-        entity_id: !secret my_device_tracker
-        to: 'home'
-      - platform: state
-        entity_id: !secret wife_device_tracker
-        to: 'home'
-    action:
-      - service: tts.google_say
-        data:
-          message: 'Welcome home master'
 
 ###### Update Notification ----------------
   - alias: 'Update Available Notifications'
@@ -79,15 +31,15 @@ automation:
       data:
         name: dark_red
 
-###### Power on lights after sunset and a running activity -------------
-  - alias: 'Power on lights after sunset and a running activity'
+###### AUTOMATIONS -------------------------
+  - alias: IFTTT
     initial_state: 'on'
     trigger:
-    - entity_id: media_player.vsx922
-      platform: state
-      to: 'on'
-    #- condition: sun
-    #  after: sunset
+      platform: event
+      event_type: ifttt_webhook_received
+      event_data:
+        action: call_service
     action:
-      service: light.turn_on
-      entity_id: light.group_tv_lights
+      service_template: '{{ trigger.event.data.service }}'
+      data_template:
+        entity_id: '{{ trigger.event.data.entity_id }}'
