@@ -47,6 +47,7 @@ custom_updater:
     - https://raw.githubusercontent.com/xirixiz/home-assistant-config/master/custom_updater.json
     - https://raw.githubusercontent.com/ljmerza/light-entity-card/master/custom_updater.json
     - https://raw.githubusercontent.com/Paul-dH/Home-Assisant-Sensor-OvApi/master/custom_components.json
+    - https://raw.githubusercontent.com/iammexx/home-assistant-config/master/ui/darksky/version.json
 
 updater:
   reporting: false
