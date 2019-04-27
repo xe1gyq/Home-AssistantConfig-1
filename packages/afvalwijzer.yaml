@@ -5,25 +5,25 @@
 homeassistant:
   customize:
     sensor.trash_gft:
-      entity_picture: /local/icons/mijnafvalwijzer/gft.png
+      entity_picture: /local/icons/afvalwijzer/gft.png
       friendly_name: GFT
     sensor.trash_papier:
-      entity_picture: /local/icons/mijnafvalwijzer/papier.png
+      entity_picture: /local/icons/afvalwijzer/papier.png
       friendly_name: Papier
     sensor.trash_restafval:
-      entity_picture: /local/icons/mijnafvalwijzer/rest.png
+      entity_picture: /local/icons/afvalwijzer/rest.png
       friendly_name: Restafval
     sensor.trash_grofvuil:
-      entity_picture: /local/icons/mijnafvalwijzer/grof.png
+      entity_picture: /local/icons/afvalwijzer/grof.png
       friendly_name: Grof vuil
     sensor.trash_kca:
-      entity_picture: /local/icons/mijnafvalwijzer/kca.png
+      entity_picture: /local/icons/afvalwijzer/kca.png
       friendly_name: KCA
     sensor.trash_takken:
-      entity_picture: /local/icons/mijnafvalwijzer/takken.png
+      entity_picture: /local/icons/afvalwijzer/takken.png
       friendly_name: Takken
     sensor.trash_kleding:
-      entity_picture: /local/icons/mijnafvalwijzer/kleding.png
+      entity_picture: /local/icons/afvalwijzer/kleding.png
       friendly_name: Kleding
     sensor.trash_today:
       friendly_name: Vandaag
@@ -34,7 +34,8 @@ homeassistant:
 
 ###### SENSORS------------------------------
 sensor:
-  - platform: mijnafvalwijzer
+  - platform: afvalwijzer
+    url: 'mijnafvalwijzer.nl'
     postcode: !secret afvalwijzer_postcode
     huisnummer: !secret afvalwijzer_huisnummer
 #    toevoeging:
@@ -46,55 +47,55 @@ sensor:
         friendly_name: "Vandaag"
         icon_template: >-
           mdi:delete-empty
-        entity_picture_template: "/local/icons/mijnafvalwijzer/{{states.sensor.trash_today.state}}.png"
+        entity_picture_template: "/local/icons/afvalwijzer/{{states.sensor.trash_today.state}}.png"
         value_template: "{{states.sensor.trash_today.state}}"
       trash_tomorrow_custom:
         friendly_name: "Afval morgen"
         icon_template: >-
           mdi:delete-empty
-        entity_picture_template: "/local/icons/mijnafvalwijzer/{{states.sensor.trash_tomorrow.state}}.png"
+        entity_picture_template: "/local/icons/afvalwijzer/{{states.sensor.trash_tomorrow.state}}.png"
         value_template: "{{states.sensor.trash_tomorrow.state}}"
       trash_gft_custom:
         friendly_name: "GFT"
         icon_template: >-
           mdi:delete-empty
-        entity_picture_template: "/local/icons/mijnafvalwijzer/gft.png"
+        entity_picture_template: "/local/icons/afvalwijzer/gft.png"
         value_template: "{{states.sensor.trash_gft.state}}"
       trash_papier_custom:
         friendly_name: "Papier"
         icon_template: >-
           mdi:delete-empty
-        entity_picture_template: "/local/icons/mijnafvalwijzer/papier.png"
+        entity_picture_template: "/local/icons/afvalwijzer/papier.png"
         value_template: "{{states.sensor.trash_papier.state}}"
       trash_restafval_custom:
         friendly_name: "Restafval"
         icon_template: >-
           mdi:delete-empty
-        entity_picture_template: "/local/icons/mijnafvalwijzer/rest.png"
+        entity_picture_template: "/local/icons/afvalwijzer/rest.png"
         value_template: "{{states.sensor.trash_restafval.state}}"
       trash_grofvuil_custom:
         friendly_name: "Grof afval"
         icon_template: >-
           mdi:delete-empty
-        entity_picture_template: "/local/icons/mijnafvalwijzer/grofvuil.png"
+        entity_picture_template: "/local/icons/afvalwijzer/grofvuil.png"
         value_template: "{{states.sensor.trash_grofvuil.state}}"
       trash_kca_custom:
         friendly_name: "Chemisch"
         icon_template: >-
           mdi:delete-empty
-        entity_picture_template: "/local/icons/mijnafvalwijzer/kca.png"
+        entity_picture_template: "/local/icons/afvalwijzer/kca.png"
         value_template: "{{states.sensor.trash_kca.state}}"
       trash_takken_custom:
         friendly_name: "Takken"
         icon_template: >-
           mdi:delete-empty
-        entity_picture_template: "/local/icons/mijnafvalwijzer/takken.png"
+        entity_picture_template: "/local/icons/afvalwijzer/takken.png"
         value_template: "{{states.sensor.trash_takken.state}}"
       trash_kleding_custom:
         friendly_name: "Kleding"
         icon_template: >-
           mdi:delete-empty
-        entity_picture_template: "/local/icons/mijnafvalwijzer/kleding.png"
+        entity_picture_template: "/local/icons/afvalwijzer/kleding.png"
         value_template: "{{states.sensor.trash_kleding.state}}"
 
 automation:

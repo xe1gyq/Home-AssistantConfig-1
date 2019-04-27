@@ -9,3 +9,7 @@ sensor:
         friendly_name: Toon
         value_template: "{% if is_state('device_tracker.toon', 'home') %}Connected{% else %}!no-reply, please check!{% endif %}"
         icon_template: "{% if is_state('device_tracker.toon', 'home') %} mdi:flash{% else %}mdi:lan-disconnect{% endif %}"
+
+toon:
+  client_id: !secret toon_consumer_key
+  client_secret: !secret toon_consumer_secret

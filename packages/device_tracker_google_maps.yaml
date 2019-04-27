@@ -1,9 +1,0 @@
-############################################
-##       Device Tracker Google Maps       ##
-############################################
-###### DEVICE TRACKERS ---------------------
-device_tracker:
-  - platform: google_maps
-    username: joellapasschier@gmail.com
-    password: 4845488#Jo!
-    max_gps_accuracy: 800

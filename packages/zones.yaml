@@ -6,23 +6,23 @@ zone:
   - name: shadownet
     latitude: !secret home_latitude
     longitude: !secret home_longitude
-    radius: 100
+    radius: 50
     icon: mdi:home
 
   - name: !secret my_work_name
     latitude: !secret my_work_latitude
     longitude: !secret my_work_longitude
-    radius: 100
+    radius: 50
     icon: mdi:briefcase
 
   - name: !secret wife_work_name1
     latitude: !secret wife_work_latitude1
     longitude: !secret wife_work_longitude1
-    radius: 100
+    radius: 50
     icon: mdi:briefcase
 
   - name: !secret wife_work_name2
     latitude: !secret wife_work_latitude2
     longitude: !secret wife_work_longitude2
-    radius: 100
+    radius: 50
     icon: mdi:briefcase

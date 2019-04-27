@@ -1,4 +1,59 @@
 #known_devices.yaml
+###### MY PHONE ----------------------------
+#GPSLOGGER
+ce0317134022612504:
+  hide_if_away: false
+  icon: mdi:cellphone-android
+  mac:
+  name: mygpslogger
+  picture: /local/icons/avatars/TVD.png
+  track: true
+
+#NMAP
+thomas_thomasgalaxys8:
+  hide_if_away: false
+  icon: mdi:cellphone-android
+  mac: 30:07:4D:00:C9:15
+  name: !secret my_name
+  picture: /local/icons/avatars/TVD.png
+  track: true
+
+#PING
+my_phone_ping:
+  hide_if_away: false
+  icon: mdi:cellphone-android
+  mac:
+  name: my phone ping
+  picture: /local/icons/avatars/TVD.png
+  track: true
+###### WIFE PHONE -------------------------
+#GPSLOGGER
+ce12171cac18a42f05:
+  hide_if_away: false
+  icon: mdi:cellphone-android
+  mac:
+  name: wifegpslogger
+  picture: /local/icons/avatars/JMP.png
+  track: true
+
+#NMAP
+joella_joellagalaxys8:
+  hide_if_away: false
+  icon: mdi:cellphone-android
+  mac: 24:18:1D:A2:E4:E3
+  name: !secret wife_name
+  picture: /local/icons/avatars/JMP.png
+  track: true
+
+#PING
+wife_phone_ping:
+  hide_if_away: false
+  icon: mdi:cellphone-android
+  mac:
+  name: wife phone ping
+  picture: /local/icons/avatars/JMP.png
+  track: true
+###### NMAP ----------------------------
 chromecast_living_room:
   hide_if_away: false
   icon: mdi:google-chrome
@@ -63,14 +118,6 @@ htpc01:
   picture:
   track: true
 
-htpc02:
-  hide_if_away: false
-  icon: mdi:kodi
-  mac: 18:A9:05:20:43:E9
-  name: HTPC-02
-  picture:
-  track: true
-
 iiidefcontoweriii:
   hide_if_away: false
   icon: mdi:desktop-tower
@@ -111,21 +158,62 @@ sharple60:
   picture:
   track: true
 
-#OWN DEVICES OWNTRACK/CLOUDMQTT/NMAP
-thomas_thomasgalaxys8:
+htpc01:
   hide_if_away: false
-  icon: mdi:cellphone-android
-  mac: 30:07:4D:00:C9:15
-  name: !secret my_name
-  picture: /local/icons/avatars/TVD.png
+  icon:
+  mac: 48:5D:60:19:7B:F6
+  name: HTPC-01
+  picture:
   track: true
 
-joella_joellagalaxys8:
+philips_hue:
   hide_if_away: false
-  icon: mdi:cellphone-android
-  mac: 24:18:1D:A2:E4:E3
-  name: !secret wife_name
-  picture: /local/icons/avatars/JMP.png
+  icon:
+  mac: 00:17:88:10:B7:80
+  name: Philips-hue
+  picture:
+  track: true
+
+ziggomediaboxxl:
+  hide_if_away: false
+  icon:
+  mac: 5C:A3:9D:F1:08:DA
+  name: ziggomediaboxxl
+  picture:
+  track: true
+
+camera_tv:
+  hide_if_away: false
+  icon:
+  mac: 00:62:6E:46:AD:54
+  name: Camera TV
+  picture:
+  track: true
+
+gs108pe:
+  hide_if_away: true
+  icon: mdi:switch
+  mac: 04:A1:51:6C:AC:0C
+  name: Netgear Switch GS108PE
+  picture:
+  track: true
+
+###### BT ----------------------------
+google_home:
+  hide_if_away: false
+  icon:
+  mac: BT_20:DF:B9:87:ED:91
+  name: Google Home
+  picture:
+  track: true
+
+###### PING ----------------------------
+htpc02:
+  hide_if_away: false
+  icon: mdi:kodi
+  mac: 18:A9:05:20:43:E9
+  name: HTPC-02
+  picture:
   track: true
 
 ltjoella:
@@ -145,7 +233,7 @@ ltthomas:
   track: true
 
 #FRIENDS&FAMLIY NMAP
-rtp:
+rimorp:
   hide_if_away: true
   icon: mdi:cellphone-android
   mac: 08:C5:E1:A9:24:EE
@@ -153,15 +241,7 @@ rtp:
   picture: /local/icons/avatars/RTP.png
   track: true
 
-gs108pe:
-  hide_if_away: true
-  icon: mdi:switch
-  mac: 04:A1:51:6C:AC:0C
-  name: Netgear Switch GS108PE
-  picture:
-  track: true
-
-tg:
+timg:
   hide_if_away: true
   icon:
   mac: 50:A6:7F:73:23:F0
@@ -169,7 +249,7 @@ tg:
   picture:
   track: true
 
-rs:
+roberts:
   hide_if_away: true
   icon: mdi:cellphone-android
   mac: 04:F1:28:26:6C:4A
@@ -177,124 +257,28 @@ rs:
   picture: /local/icons/avatars/RS.png
   track: true
 
-camera_tv:
-  hide_if_away: false
-  icon:
-  mac: 00:62:6E:46:AD:54
-  name: Camera TV
-  picture:
-  track: true
-
-azi:
+amirz:
   hide_if_away: true
-  icon:
+  icon: mdi:cellphone-android
   mac: 8C:F5:A3:34:6E:3D
   name: Amir Zarif Ibrahim
   picture: /local/icons/avatars/AZI.png
   track: true
 
-stxl10p03:
-  hide_if_away: false
-  icon:
-  mac: 00:FF:38:48:F3:8A
-  name: STX-L10P-03
-  picture:
-  track: true
-
-kk:
-  hide_if_away: false
-  icon:
+kursatk:
+  hide_if_away: true
+  icon: mdi:cellphone-android
   mac: 30:07:4D:AC:C1:A3
   name: Kursat Karacan
   picture: /local/icons/avatars/KK.png
   track: true
 
-google_home:
-  hide_if_away: false
-  icon:
-  mac: BT_20:DF:B9:87:ED:91
-  name: Google Home
-  picture:
-  track: true
-
-oneplus_3:
-  hide_if_away: false
-  icon:
-  mac: C0:EE:FB:DB:1E:F1
-  name: OnePlus 3
-  picture:
-  track: true
-
-htpc_01:
-  hide_if_away: false
-  icon:
-  mac: 48:5D:60:19:7B:F6
-  name: HTPC-01
-  picture:
-  track: true
-
-philips_hue:
-  hide_if_away: false
-  icon:
-  mac: 00:17:88:10:B7:80
-  name: Philips-hue
-  picture:
-  track: true
-
-galaxy_j6_zr:
-  hide_if_away: false
-  icon:
-  mac: 68:E7:C2:17:01:AB
-  name: Zefanja Ratnavelayutham
-  picture: /local/icons/avatars/ZR.png?v=1
-  track: true
-
-5c_a3_9d_f1_08_da:
-  hide_if_away: false
-  icon:
-  mac: 5C:A3:9D:F1:08:DA
-  name: 5c a3 9d f1 08 da
-  picture:
-  track: true
-
-10_3_1_9_5d_a2_fd_b5_8b_db:
-  hide_if_away: false
-  icon:
-  mac: 10.3.1.9_5D:A2:FD:B5:8B:DB
-  name: 10.3.1.9 5d:a2:fd:b5:8b:db
-  picture:
-  track: true
-
-10_3_1_9_73_a2_aa_53_dd_03:
-  hide_if_away: false
-  icon:
-  mac: 10.3.1.9_73:A2:AA:53:DD:03
-  name: 10.3.1.9 73:a2:aa:53:dd:03
-  picture:
-  track: true
-
-10_3_1_9_51_dc_07_70_82_72:
-  hide_if_away: false
-  icon:
-  mac: 10.3.1.9_51:DC:07:70:82:72
-  name: 10.3.1.9 51:dc:07:70:82:72
-  picture:
-  track: true
-
-10_3_1_9_79_87_01_4c_a3_77:
-  hide_if_away: false
-  icon:
-  mac: 10.3.1.9_79:87:01:4C:A3:77
-  name: 10.3.1.9 79:87:01:4c:a3:77
-  picture:
-  track: true
-
-10_3_1_9_62_6b_80_4b_da_58:
-  hide_if_away: false
-  icon:
-  mac:
-  name: 10 3 1 9 62 6b 80 4b da 58
-  picture:
+galaxyj6:
+  hide_if_away: true
+  icon: mdi:cellphone-android
+  mac: 30:07:4D:AC:C1:A3
+  name: Kursat Karacan
+  picture: /local/icons/avatars/KK.png
   track: true
 
 lap16261:
@@ -305,74 +289,314 @@ lap16261:
   picture:
   track: true
 
-10_3_1_9_57_5e_77_06_43_45:
+10_3_1_9_79_5c_0e_49_15_d1:
   hide_if_away: false
   icon:
   mac:
-  name: 10 3 1 9 57 5e 77 06 43 45
+  name: 10 3 1 9 79 5c 0e 49 15 d1
   picture:
   track: true
 
-10_3_1_9_56_3b_4e_09_90_41:
+10_3_1_9_94_0e_6b_90_95_b9:
   hide_if_away: false
   icon:
   mac:
-  name: 10 3 1 9 56 3b 4e 09 90 41
+  name: 10 3 1 9 94 0e 6b 90 95 b9
   picture:
   track: true
 
-10_3_1_9_40_52_f9_a9_c7_a6:
+10_3_1_9_7c_4c_72_d7_9c_69:
   hide_if_away: false
   icon:
   mac:
-  name: 10 3 1 9 40 52 f9 a9 c7 a6
+  name: 10 3 1 9 7c 4c 72 d7 9c 69
   picture:
   track: true
 
-1c_87_2c_b6_9b_ff:
-  hide_if_away: false
-  icon:
-  mac: 1C:87:2C:B6:9B:FF
-  name: 1c 87 2c b6 9b ff
-  picture:
-  track: true
-
-00_1d_aa_36_11_a0:
-  hide_if_away: false
-  icon:
-  mac: 00:1D:AA:36:11:A0
-  name: 00 1d aa 36 11 a0
-  picture:
-  track: true
-
-f8_46_1c_2a_5d_c1:
-  hide_if_away: false
-  icon:
-  mac: F8:46:1C:2A:5D:C1
-  name: f8 46 1c 2a 5d c1
-  picture:
-  track: true
-
-10_3_1_9_55_ba_23_fb_5a_bc:
+10_3_1_9_75_64_cc_c4_27_55:
   hide_if_away: false
   icon:
   mac:
-  name: 10 3 1 9 55 ba 23 fb 5a bc
+  name: 10 3 1 9 75 64 cc c4 27 55
   picture:
   track: true
 
-google_maps_103516875542669772642:
+10_3_1_9_47_bf_c5_e4_35_02:
   hide_if_away: false
   icon:
   mac:
-  name: google maps 103516875542669772642
-  picture: https://lh3.googleusercontent.com/a-/AAuE7mAo9ApcV2ALN4h0IYMiL35uo4ptBiF4xzIyW85aIBc
+  name: 10 3 1 9 47 bf c5 e4 35 02
+  picture:
   track: true
 
-google_maps_joellapasschier_gmail_com:
+10_3_1_9_41_28_3d_7c_ba_92:
   hide_if_away: false
   icon:
   mac:
-  name: google maps joellapasschier gmail com
+  name: 10 3 1 9 41 28 3d 7c ba 92
+  picture:
+  track: true
+
+icl_a10p_01:
+  hide_if_away: false
+  icon:
+  mac: 78:2B:CB:83:A7:59
+  name: ICL-A10P-01
+  picture:
+  track: true
+
+nb_thomas:
+  hide_if_away: false
+  icon:
+  mac: 34:F3:9A:62:6F:D3
+  name: NB-THOMAS
+  picture:
+  track: true
+
+10_3_1_9_fc_8f_90_42_35_a1:
+  hide_if_away: false
+  icon:
+  mac:
+  name: 10 3 1 9 fc 8f 90 42 35 a1
+  picture:
+  track: true
+
+10_3_1_9_74_a4_cf_60_21_a2:
+  hide_if_away: false
+  icon:
+  mac:
+  name: 10 3 1 9 74 a4 cf 60 21 a2
+  picture:
+  track: true
+
+10_3_1_9_6c_f0_de_17_e2_99:
+  hide_if_away: false
+  icon:
+  mac:
+  name: 10 3 1 9 6c f0 de 17 e2 99
+  picture:
+  track: true
+
+10_3_1_9_4f_c8_30_55_e3_6e:
+  hide_if_away: false
+  icon:
+  mac:
+  name: 10 3 1 9 4f c8 30 55 e3 6e
+  picture:
+  track: true
+
+10_3_1_9_6d_0e_3f_5c_0f_f4:
+  hide_if_away: false
+  icon:
+  mac:
+  name: 10 3 1 9 6d 0e 3f 5c 0f f4
+  picture:
+  track: true
+
+10_3_1_9_57_6c_6f_65_e8_4f:
+  hide_if_away: false
+  icon:
+  mac:
+  name: 10 3 1 9 57 6c 6f 65 e8 4f
+  picture:
+  track: true
+
+10_3_1_9_7f_c9_92_75_40_51:
+  hide_if_away: false
+  icon:
+  mac:
+  name: 10 3 1 9 7f c9 92 75 40 51
+  picture:
+  track: true
+
+10_3_1_9_54_18_9e_df_1d_60:
+  hide_if_away: false
+  icon:
+  mac:
+  name: 10 3 1 9 54 18 9e df 1d 60
+  picture:
+  track: true
+
+10_3_1_9_5d_06_2b_09_d1_75:
+  hide_if_away: false
+  icon:
+  mac:
+  name: 10 3 1 9 5d 06 2b 09 d1 75
+  picture:
+  track: true
+
+10_3_1_9_40_3a_47_5e_a4_2a:
+  hide_if_away: false
+  icon:
+  mac:
+  name: 10 3 1 9 40 3a 47 5e a4 2a
+  picture:
+  track: true
+
+10_3_1_9_5d_de_9f_b7_54_79:
+  hide_if_away: false
+  icon:
+  mac:
+  name: 10 3 1 9 5d de 9f b7 54 79
+  picture:
+  track: true
+
+10_3_1_9_68_92_ef_03_fd_aa:
+  hide_if_away: false
+  icon:
+  mac:
+  name: 10 3 1 9 68 92 ef 03 fd aa
+  picture:
+  track: true
+
+10_3_1_9_7d_02_9d_8d_ca_16:
+  hide_if_away: false
+  icon:
+  mac:
+  name: 10 3 1 9 7d 02 9d 8d ca 16
+  picture:
+  track: true
+
+10_3_1_9_59_14_f2_57_d5_d2:
+  hide_if_away: false
+  icon:
+  mac:
+  name: 10 3 1 9 59 14 f2 57 d5 d2
+  picture:
+  track: true
+
+10_3_1_9_6e_5b_e1_a2_32_be:
+  hide_if_away: false
+  icon:
+  mac:
+  name: 10 3 1 9 6e 5b e1 a2 32 be
+  picture:
+  track: true
+
+10_3_1_9_43_81_60_c9_0a_18:
+  hide_if_away: false
+  icon:
+  mac:
+  name: 10 3 1 9 43 81 60 c9 0a 18
+  picture:
+  track: true
+
+10_3_1_9_79_a8_c0_5b_f0_d9:
+  hide_if_away: false
+  icon:
+  mac:
+  name: 10 3 1 9 79 a8 c0 5b f0 d9
+  picture:
+  track: true
+
+10_3_1_9_40_92_3b_ff_94_2f:
+  hide_if_away: false
+  icon:
+  mac:
+  name: 10 3 1 9 40 92 3b ff 94 2f
+  picture:
+  track: true
+
+10_3_1_9_42_7f_61_f6_d6_71:
+  hide_if_away: false
+  icon:
+  mac:
+  name: 10 3 1 9 42 7f 61 f6 d6 71
+  picture:
+  track: true
+
+10_3_1_9_57_7d_c8_c5_40_91:
+  hide_if_away: false
+  icon:
+  mac:
+  name: 10 3 1 9 57 7d c8 c5 40 91
+  picture:
+  track: true
+
+10_3_1_9_4a_a5_72_46_7b_ca:
+  hide_if_away: false
+  icon:
+  mac:
+  name: 10 3 1 9 4a a5 72 46 7b ca
+  picture:
+  track: true
+
+10_3_1_9_60_74_3e_4c_66_57:
+  hide_if_away: false
+  icon:
+  mac:
+  name: 10 3 1 9 60 74 3e 4c 66 57
+  picture:
+  track: true
+
+10_3_1_9_79_48_30_b1_f2_63:
+  hide_if_away: false
+  icon:
+  mac:
+  name: 10 3 1 9 79 48 30 b1 f2 63
+  picture:
+  track: true
+
+10_3_1_9_57_7d_e8_45_83_24:
+  hide_if_away: false
+  icon:
+  mac:
+  name: 10 3 1 9 57 7d e8 45 83 24
+  picture:
+  track: true
+
+10_3_1_9_7f_55_80_48_cf_68:
+  hide_if_away: false
+  icon:
+  mac:
+  name: 10 3 1 9 7f 55 80 48 cf 68
+  picture:
+  track: true
+
+10_3_1_9_54_02_09_66_31_e3:
+  hide_if_away: false
+  icon:
+  mac:
+  name: 10 3 1 9 54 02 09 66 31 e3
+  picture:
+  track: true
+
+10_3_1_9_5e_bb_29_1e_6f_5d:
+  hide_if_away: false
+  icon:
+  mac:
+  name: 10 3 1 9 5e bb 29 1e 6f 5d
+  picture:
+  track: true
+
+10_3_1_9_5e_5b_67_d8_e0_0b:
+  hide_if_away: false
+  icon:
+  mac:
+  name: 10 3 1 9 5e 5b 67 d8 e0 0b
+  picture:
+  track: true
+
+galaxy_s10:
+  hide_if_away: false
+  icon:
+  mac: A8:DB:03:38:97:81
+  name: Galaxy-S10
+  picture:
+  track: true
+
+r58m31yy1hx:
+  hide_if_away: false
+  icon:
+  mac:
+  name: r58m31yy1hx
+  picture:
+  track: true
+
+osmc:
+  hide_if_away: false
+  icon:
+  mac: B8:27:EB:10:E3:C9
+  name: osmc
   picture:
   track: true

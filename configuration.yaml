@@ -27,7 +27,7 @@ http:
 
 system_health:
 speedtestdotnet:
-
+afvalwijzer:
 #lovelace:
 #  mode: yaml
 #shopping_list:
@@ -35,7 +35,6 @@ speedtestdotnet:
 #logger:
 
 custom_updater:
-#  mode: storage
   show_installable: false
   hide_sensor: false
   track:
@@ -44,10 +43,11 @@ custom_updater:
 #    - python_scripts
   card_urls:
     - https://raw.githubusercontent.com/rdehuyss/homeassistant-lovelace-google-calendar-card/master/custom_updater.json
-    - https://raw.githubusercontent.com/xirixiz/home-assistant-config/master/custom_updater.json
     - https://raw.githubusercontent.com/ljmerza/light-entity-card/master/custom_updater.json
-    - https://raw.githubusercontent.com/Paul-dH/Home-Assisant-Sensor-OvApi/master/custom_components.json
     - https://raw.githubusercontent.com/iammexx/home-assistant-config/master/ui/darksky/version.json
+  component_urls:
+    - https://raw.githubusercontent.com/xirixiz/home-assistant-config/master/custom_updater.json
+    - https://raw.githubusercontent.com/Paul-dH/Home-Assisant-Sensor-OvApi/master/custom_components.json
 
 updater:
   reporting: false
@@ -63,7 +63,8 @@ hue:
       allow_unreachable: true
 
 tts:
-  - platform: google
+  - platform: google_translate
+    service_name: google_say
     cache: true
     cache_dir: /tmp/tts
     time_memory: 300

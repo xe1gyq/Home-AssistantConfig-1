@@ -1,4 +1,51 @@
 #known_devices.yaml
+###### MY PHONE ----------------------------
+#GPSLOGGER
+ce0317134022612504:
+  hide_if_away: false
+  icon: mdi:cellphone-android
+  mac:
+  name: mygpslogger
+  picture: /local/icons/avatars/TVD.png
+  track: true
+
+#NMAP
+thomas_thomasgalaxys8:
+  hide_if_away: false
+  icon: mdi:cellphone-android
+  mac: 30:07:4D:00:C9:15
+  name: !secret my_name
+  picture: /local/icons/avatars/TVD.png
+  track: true
+
+#PING
+my_phone_ping:
+  hide_if_away: false
+  icon: mdi:cellphone-android
+  mac:
+  name: my phone ping
+  picture: /local/icons/avatars/TVD.png
+  track: true
+###### WIFE PHONE -------------------------
+#GPSLOGGER
+ce12171cac18a42f05:
+  hide_if_away: false
+  icon: mdi:cellphone-android
+  mac:
+  name: wifegpslogger
+  picture: /local/icons/avatars/JMP.png
+  track: true
+
+#NMAP
+joella_joellagalaxys8:
+  hide_if_away: false
+  icon: mdi:cellphone-android
+  mac: 24:18:1D:A2:E4:E3
+  name: !secret wife_name
+  picture: /local/icons/avatars/JMP.png
+  track: true
+
+###### NMAP ----------------------------
 chromecast_living_room:
   hide_if_away: false
   icon: mdi:google-chrome
@@ -63,14 +110,6 @@ htpc01:
   picture:
   track: true
 
-htpc02:
-  hide_if_away: false
-  icon: mdi:kodi
-  mac: 18:A9:05:20:43:E9
-  name: HTPC-02
-  picture:
-  track: true
-
 iiidefcontoweriii:
   hide_if_away: false
   icon: mdi:desktop-tower
@@ -111,21 +150,62 @@ sharple60:
   picture:
   track: true
 
-#OWN DEVICES OWNTRACK/CLOUDMQTT/NMAP
-thomas_thomasgalaxys8:
+htpc01:
   hide_if_away: false
-  icon: mdi:cellphone-android
-  mac: 30:07:4D:00:C9:15
-  name: !secret my_name
-  picture: /local/icons/avatars/TVDhome.png
+  icon:
+  mac: 48:5D:60:19:7B:F6
+  name: HTPC-01
+  picture:
   track: true
 
-joella_joellagalaxys8:
+philips_hue:
   hide_if_away: false
-  icon: mdi:cellphone-android
-  mac: 24:18:1D:A2:E4:E3
-  name: !secret wife_name
-  picture: /local/icons/avatars/JMP.png
+  icon:
+  mac: 00:17:88:10:B7:80
+  name: Philips-hue
+  picture:
+  track: true
+
+ziggomediaboxxl:
+  hide_if_away: false
+  icon:
+  mac: 5C:A3:9D:F1:08:DA
+  name: ziggomediaboxxl
+  picture:
+  track: true
+
+camera_tv:
+  hide_if_away: false
+  icon:
+  mac: 00:62:6E:46:AD:54
+  name: Camera TV
+  picture:
+  track: true
+
+gs108pe:
+  hide_if_away: true
+  icon: mdi:switch
+  mac: 04:A1:51:6C:AC:0C
+  name: Netgear Switch GS108PE
+  picture:
+  track: true
+
+###### BT ----------------------------
+google_home:
+  hide_if_away: false
+  icon:
+  mac: BT_20:DF:B9:87:ED:91
+  name: Google Home
+  picture:
+  track: true
+
+###### PING ----------------------------
+htpc02:
+  hide_if_away: false
+  icon: mdi:kodi
+  mac: 18:A9:05:20:43:E9
+  name: HTPC-02
+  picture:
   track: true
 
 ltjoella:
@@ -145,7 +225,7 @@ ltthomas:
   track: true
 
 #FRIENDS&FAMLIY NMAP
-rtp:
+rimorp:
   hide_if_away: true
   icon: mdi:cellphone-android
   mac: 08:C5:E1:A9:24:EE
@@ -153,15 +233,7 @@ rtp:
   picture: /local/icons/avatars/RTP.png
   track: true
 
-gs108pe:
-  hide_if_away: true
-  icon: mdi:switch
-  mac: 04:A1:51:6C:AC:0C
-  name: Netgear Switch GS108PE
-  picture:
-  track: true
-
-tg:
+timg:
   hide_if_away: true
   icon:
   mac: 50:A6:7F:73:23:F0
@@ -169,7 +241,7 @@ tg:
   picture:
   track: true
 
-rs:
+roberts:
   hide_if_away: true
   icon: mdi:cellphone-android
   mac: 04:F1:28:26:6C:4A
@@ -177,74 +249,26 @@ rs:
   picture: /local/icons/avatars/RS.png
   track: true
 
-camera_tv:
-  hide_if_away: false
-  icon:
-  mac: 00:62:6E:46:AD:54
-  name: Camera TV
-  picture:
-  track: true
-
-azi:
+amirz:
   hide_if_away: true
-  icon:
+  icon: mdi:cellphone-android
   mac: 8C:F5:A3:34:6E:3D
   name: Amir Zarif Ibrahim
   picture: /local/icons/avatars/AZI.png
   track: true
 
-stxl10p03:
-  hide_if_away: false
-  icon:
-  mac: 00:FF:38:48:F3:8A
-  name: STX-L10P-03
-  picture:
-  track: true
-
-kk:
-  hide_if_away: false
-  icon:
+kursatk:
+  hide_if_away: true
+  icon: mdi:cellphone-android
   mac: 30:07:4D:AC:C1:A3
   name: Kursat Karacan
   picture: /local/icons/avatars/KK.png
   track: true
 
-google_home:
-  hide_if_away: false
-  icon:
-  mac: BT_20:DF:B9:87:ED:91
-  name: Google Home
-  picture:
-  track: true
-
-oneplus_3:
-  hide_if_away: false
-  icon:
-  mac: C0:EE:FB:DB:1E:F1
-  name: OnePlus 3
-  picture:
-  track: true
-
-htpc_01:
-  hide_if_away: false
-  icon:
-  mac: 48:5D:60:19:7B:F6
-  name: HTPC-01
-  picture:
-  track: true
-
-philips_hue:
-  hide_if_away: false
-  icon:
-  mac: 00:17:88:10:B7:80
-  name: Philips-hue
-  picture:
-  track: true
-
-galaxy_j6_zr:
-  hide_if_away: false
-  icon:
-  mac: 68:E7:C2:17:01:AB
-  name: Zefanja Ratnavelayutham
-  picture: /local/icons/avatars/ZR.png?v=1
+galaxyj6:
+  hide_if_away: true
+  icon: mdi:cellphone-android
+  mac: 30:07:4D:AC:C1:A3
+  name: Kursat Karacan
+  picture: /local/icons/avatars/KK.png
   track: true

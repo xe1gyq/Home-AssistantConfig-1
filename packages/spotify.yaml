@@ -9,17 +9,3 @@ script:
         entity_id: remote.harmony_hub
         data:
           activity: "30886837"
-
-###### AUTOMATIONS -------------------------
-automation:
-  - alias: Power on receiver when starting spotify
-    initial_state: 'on'
-    trigger:
-    - entity_id: media_player.chromecast_living_room
-      platform: state
-      to: 'playing'
-    action:
-      service: remote.turn_on
-      entity_id: remote.harmony_hub
-      data:
-        activity: "30886837"

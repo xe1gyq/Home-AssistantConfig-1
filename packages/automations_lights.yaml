@@ -17,7 +17,7 @@ automation:
     condition:
       - condition: state
         entity_id: sun.sun
-        state: 'sunset'
+        state: 'below_horizon'
     action:
       service: homeassistant.turn_on
       entity_id: light.group_tv_lights
@@ -30,25 +30,25 @@ automation:
         entity_id: light.hyperion
         to: 'on'
     action:
-      - delay: 00:00:01
+      - delay: 00:00:03
       - service: light.turn_on
         data:
           entity_id: light.hyperion
           effect: "Full color mood blobs"
 
 ###### Turn on lights after sunset and someone is home ------------------
-  - alias: 'Turn on lights after sunset and someone is home'
+  - alias: 'Turn on lights after sunset and someone comes home'
     initial_state: 'on'
     trigger:
       - platform: sun
         event: sunset
         offset: '-00:00:00'
       - platform: state
-        entity_id: input_boolean.tvd
-        to: 'on'
+        entity_id: group.my_phone
+        to: 'home'
       - platform: state
-        entity_id: input_boolean.jmp
-        to: 'on'
+        entity_id: group.wife_phone
+        to: 'home'
       - platform: state
         entity_id: input_boolean.guest
         to: 'on'
@@ -56,14 +56,17 @@ automation:
       - condition: or
         conditions:
         - condition: state
-          entity_id: input_boolean.tvd
-          state: 'on'
+          entity_id: group.my_phone
+          state: 'home'
         - condition: state
-          entity_id: input_boolean.jmp
-          state: 'on'
+          entity_id: group.wife_phone
+          state: 'home'
         - condition: state
           entity_id: input_boolean.guest
           state: 'on'
+        - condition: state
+          entity_id: sun.sun
+          state: 'below_horizon'
     action:
       service: light.turn_on
       entity_id: light.group_tv_lights
