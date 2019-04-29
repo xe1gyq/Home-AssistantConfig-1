@@ -54,8 +54,9 @@ updater:
 
 cast:
   media_player:
-    - host: 10.3.1.7
-    - host: 10.3.1.9
+    - host: 10.3.1.7 #chromecast_attic
+    - host: 10.3.1.9 #google_home
+    - host: 10.3.1.14 #chromecast_living_room
 
 hue:
   bridges:

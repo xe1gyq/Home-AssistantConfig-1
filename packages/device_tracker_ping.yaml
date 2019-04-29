@@ -6,5 +6,6 @@ device_tracker:
   - platform: ping
     hosts:
       htpc01: 10.3.1.2
-      my_phone_ping: 10.3.1.15
+      my_galaxys8_phone_ping: 10.3.1.15
       wife_phone_ping: 10.3.1.112
+      my_galaxys10plus_phone_ping: 10.3.1.116

@@ -4,7 +4,7 @@
 ###### CUSTOMIZATIONS-----------------------
 homeassistant:
   customize:
-    sensor.chromecast_living_room:
+    sensor.chromecast_attic:
       templates:
         icon_color: >-
           if (state === 'Connected') return 'rgb(0, 171, 0)';
@@ -14,17 +14,17 @@ homeassistant:
 sensor:
   - platform: template
     sensors:
-      chromecast_living_room:
-        friendly_name: Chromecast Living Room
-        value_template: "{% if is_state('device_tracker.chromecast_living_room', 'home') %}Connected{% else %}Offline{% endif %}"
-        icon_template: "{% if is_state('device_tracker.chromecast_living_room', 'home') %} mdi:cast{% else %}mdi:lan-disconnect{% endif %}"
+      chromecast_attic:
+        friendly_name: Chromecast Attic
+        value_template: "{% if is_state('device_tracker.chromecast_attic', 'home') %}Connected{% else %}Offline{% endif %}"
+        icon_template: "{% if is_state('device_tracker.chromecast_attic', 'home') %} mdi:cast{% else %}mdi:lan-disconnect{% endif %}"
 
 ###### AUTOMATIONS -------------------------
 automation:
   - alias: Power on receiver when starting chromecast
     initial_state: 'on'
     trigger:
-    - entity_id: media_player.chromecast_living_room
+    - entity_id: media_player.chromecast_attic
       platform: state
       to: 'playing'
     action:

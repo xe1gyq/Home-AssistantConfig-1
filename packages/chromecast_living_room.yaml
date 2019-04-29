@@ -1,0 +1,20 @@
+############################################
+##               CHROMECAST               ##
+############################################
+###### CUSTOMIZATIONS-----------------------
+homeassistant:
+  customize:
+    sensor.chromecast_living_room:
+      templates:
+        icon_color: >-
+          if (state === 'Connected') return 'rgb(0, 171, 0)';
+          return 'rgb(255, 0, 0)';
+
+###### SENSORS -----------------------------
+sensor:
+  - platform: template
+    sensors:
+      chromecast_living_room:
+        friendly_name: Chromecast Living Room
+        value_template: "{% if is_state('device_tracker.chromecast_living_room', 'home') %}Connected{% else %}Offline{% endif %}"
+        icon_template: "{% if is_state('device_tracker.chromecast_living_room', 'home') %} mdi:cast{% else %}mdi:lan-disconnect{% endif %}"

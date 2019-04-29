@@ -8,8 +8,9 @@ group:
     entities:
       - device_tracker.thomas_thomasgalaxys8
       - device_tracker.ce0317134022612504
-      - device_tracker.my_phone_ping
+      - device_tracker.my_galaxys8_phone_ping
       - sensor.mygpsloggersensor
+      - device_tracker.my_galaxys10plus_phone_ping
 
   wife_phone:
     view: true
