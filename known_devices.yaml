@@ -315,3 +315,27 @@ ziggomediaboxxl_2:
   name: 10 3 1 9 61 e1 e1 99 1c a6
   picture:
   track: true
+
+r58m31yy1hx:
+  hide_if_away: false
+  icon:
+  mac:
+  name: r58m31yy1hx
+  picture:
+  track: true
+
+10_3_1_9_5b_a8_11_09_77_f6:
+  hide_if_away: false
+  icon:
+  mac:
+  name: 10 3 1 9 5b a8 11 09 77 f6
+  picture:
+  track: true
+
+34_f3_9a_62_6f_d3:
+  hide_if_away: false
+  icon:
+  mac: 34:F3:9A:62:6F:D3
+  name: 34 f3 9a 62 6f d3
+  picture:
+  track: true

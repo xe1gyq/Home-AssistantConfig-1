@@ -9,7 +9,6 @@ group:
       - device_tracker.thomas_thomasgalaxys8
       - device_tracker.ce0317134022612504
       - device_tracker.my_galaxys8_phone_ping
-      - sensor.mygpsloggersensor
       - device_tracker.my_galaxys10plus_phone_ping
 
   wife_phone:
@@ -19,7 +18,6 @@ group:
       - device_tracker.joella_joellagalaxys8
       - device_tracker.ce12171cac18a42f05
       - device_tracker.wife_phone_ping
-      - sensor.wifegpsloggerseensor
 
 ###### SENSORS -----------------------------
 sensor:
