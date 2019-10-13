@@ -53,4 +53,4 @@
   - device_id: contacts
     ignore_availability: true
     name: Contacts
-    track: true
+    track: false
