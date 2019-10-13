@@ -4,5 +4,7 @@
 ###### LIGHT -------------------------------
 light:
   - platform: hyperion
-    host: 127.0.0.1
+    host: 10.3.1.20
     port: 19444
+    name: hyperion
+    priority: 249

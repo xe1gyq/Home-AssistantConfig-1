@@ -15,3 +15,7 @@ camera:
   - platform: ffmpeg
     input: -rtsp_transport tcp -i "rtsp://10.3.1.11:554/rtsp_live0"
     name: Camera Kitchen
+
+
+ffmpeg:
+  ffmpeg_bin: /usr/bin/ffmpeg

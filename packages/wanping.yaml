@@ -1,0 +1,21 @@
+############################################
+##              WAN PING               ##
+############################################
+###### CUSTOMIZATIONS-----------------------
+homeassistant:
+  customize:
+    sensor.wan:
+      friendly_name: 'WAN Connection'
+      icon: mdi:web
+
+###### BINARY SENSORS-----------------------
+binary_sensor:
+  - platform: ping
+    host: google.nl
+    name: wan
+
+sensor:
+  - platform: template
+    sensors:
+      wan:
+        value_template: "{% if is_state('binary_sensor.wan', 'on') %}Connected{% else %}!no-reply, please check!{% endif %}"

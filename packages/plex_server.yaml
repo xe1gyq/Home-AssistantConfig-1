@@ -1,0 +1,50 @@
+############################################
+##               PLEX SERVER              ##
+############################################
+homeassistant:
+  customize:
+    script.lasttvshows:
+      icon: mdi:filmstrip
+    script.update_library:
+      icon: mdi:kodi
+    script.lastmovies:
+      icon: mdi:television-box
+      friendly_name: Last Movies
+
+###### MEDIA PLAYER ------------------------
+#media_player:
+#  - platform: plex
+#    show_all_controls: false
+#    use_episode_art: true
+ #   remove_unavailable_clients: true
+#    client_remove_interval: 600
+
+###### SCRIPTS -----------------------------
+script:
+  plex:
+    sequence:
+      - service: remote.turn_on
+        entity_id: remote.harmony_hub
+        data:
+          activity: "40014109"
+
+###### SENSORS -----------------------------
+sensor:
+  - platform: plex_recently_added
+    host: 10.3.1.2
+    port: 32400
+    token: !secret plex_token
+    ssl: false
+    ssl_cert: false
+    download_images: true
+    max: 5
+    section_types:
+    - movie
+    - show
+  - platform: plex
+    host: 10.3.1.2
+    port: 32400
+    username: thomasvdalen@gmail.com
+    password: 4845488#gTEJX!
+    token: QhVkCLxwwWvpqtebHcfr
+    verify_ssl: false

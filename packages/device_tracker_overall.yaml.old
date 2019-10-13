@@ -1,8 +1,7 @@
 ############################################
-##                  PING                  ##
+##                  NMAP                  ##
 ############################################
 ###### DEVICE TRACKERS ---------------------
 device_tracker:
-  - platform: ping
-    hosts:
-      iiidefconnasiii: 10.3.1.2
+  - platform: gpslogger
+    consider_home: 80

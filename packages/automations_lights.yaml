@@ -36,7 +36,7 @@ automation:
           entity_id: light.hyperion
           effect: "Full color mood blobs"
 
-###### Turn on lights after sunset and someone is home ------------------
+###### Turn on lights after sunset and someone comes home ------------------
   - alias: 'Turn on lights after sunset and someone comes home'
     initial_state: 'on'
     trigger:
@@ -70,3 +70,35 @@ automation:
     action:
       service: light.turn_on
       entity_id: light.group_tv_lights
+
+###### Set hyperion effect after playback -----------
+  - alias: Set hyperion effect after playback
+    initial_state: 'on'
+    trigger:
+      - platform: state
+        entity_id: media_player.chrome_3
+        to: 'off'
+      - platform: state
+        entity_id: media_player.chrome_3
+        to: 'paused'
+      - platform: state
+        entity_id: media_player.chrome_3
+        to: 'idle'
+    action:
+      - service: light.turn_on
+        data:
+          entity_id: light.hyperion
+          effect: "Full color mood blobs"
+
+###### Set hyperion capture when starting movie -----------
+  - alias: Set hyperion when playback starts
+    initial_state: 'on'
+    trigger:
+      - platform: state
+        entity_id: media_player.chrome_3
+        to: 'playing'
+    action:
+      - service: light.turn_on
+        data:
+          entity_id: light.hyperion
+          effect: HDMI

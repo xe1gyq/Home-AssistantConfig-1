@@ -1,0 +1,33 @@
+############################################
+##               MY DEVICES               ##
+############################################
+group:
+  my_phone:
+    view: true
+    icon: mdi:home
+    entities:
+      - device_tracker.thomas_thomasgalaxys10plus
+      - device_tracker.r58m31yy1hx
+
+  wife_phone:
+    view: true
+    icon: mdi:home
+    entities:
+      - device_tracker.joella_joellagalaxys8
+      - device_tracker.ce12171cac18a42f05
+
+###### SENSORS -----------------------------
+sensor:
+  - platform: template
+    sensors:
+#      mygpsloggersensor:
+#        friendly_name: mygpsloggersensor
+#        value_template: "{% if is_state('device_tracker.r58m31yy1hx', 'shadownet') %}home{% else %}!not_home{% endif %}"
+#        entity_picture_template: "{% if is_state('device_tracker.r58m31yy1hx', 'shadownet') %} /local/icons/avatars/TVD.png{% else %} /local/icons/avatars/TVD.png{% endif %}"
+#        icon_template: "{% if is_state('camera.camera_tv', 'idle') %} mdi:cctv{% else %}mdi:lan-disconnect{% endif %}"
+
+      wifegpsloggerseensor:
+        friendly_name: wifegpsloggerseensor
+        value_template: "{% if is_state('device_tracker.ce12171cac18a42f05', 'shadownet') %}home{% else %}!not_home{% endif %}"
+        entity_picture_template: "{% if is_state('device_tracker.ce12171cac18a42f05', 'shadownet') %} /local/icons/avatars/JMP.png{% else %} /local/icons/avatars/JMP.png{% endif %}"
+#        icon_template: "{% if is_state('camera.camera_tv', 'idle') %} mdi:cctv{% else %}mdi:lan-disconnect{% endif %}"

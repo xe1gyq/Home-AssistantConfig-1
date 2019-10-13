@@ -4,13 +4,13 @@
 ###### SENSORS -----------------------------
 sensor:
   - platform: waze_travel_time
-    origin: !secret my_device_tracker
+    origin: device_tracker.r58m31yy1hx
     destination: zone.shadownet
     region: EU
     name: !secret me_to_home
 
   - platform: waze_travel_time
-    origin: !secret my_device_tracker
+    origin: device_tracker.r58m31yy1hx
     destination: !secret my_work_zone
     region: EU
     name: !secret me_to_work
@@ -32,3 +32,9 @@ sensor:
     destination: !secret wife_work_zone2
     region: EU
     name: !secret wife_to_work2
+
+  - platform: waze_travel_time
+    origin: device_tracker.r58m31yy1hx
+    destination: !secret wife_device_tracker
+    region: EU
+    name: !secret me_to_her

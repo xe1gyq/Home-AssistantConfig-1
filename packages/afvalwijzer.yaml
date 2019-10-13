@@ -1,6 +1,9 @@
 ############################################
 ##               AFVALWIJZER              ##
 ############################################
+###### COMPONENT ---------------------------
+#afvalwijzer:
+
 ###### CUSTOMIZATIONS-----------------------
 homeassistant:
   customize:
@@ -11,7 +14,7 @@ homeassistant:
       entity_picture: /local/icons/afvalwijzer/papier.png
       friendly_name: Papier
     sensor.trash_restafval:
-      entity_picture: /local/icons/afvalwijzer/rest.png
+      entity_picture: /local/icons/afvalwijzer/kliko.png
       friendly_name: Restafval
     sensor.trash_grofvuil:
       entity_picture: /local/icons/afvalwijzer/grof.png
@@ -71,7 +74,7 @@ sensor:
         friendly_name: "Restafval"
         icon_template: >-
           mdi:delete-empty
-        entity_picture_template: "/local/icons/afvalwijzer/rest.png"
+        entity_picture_template: "/local/icons/afvalwijzer/kliko.png"
         value_template: "{{states.sensor.trash_restafval.state}}"
       trash_grofvuil_custom:
         friendly_name: "Grof afval"

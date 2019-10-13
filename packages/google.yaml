@@ -1,0 +1,33 @@
+############################################
+##              Google Home               ##
+############################################
+###### DEVICE TRACKER ----------------------
+#googlehome:
+  #devices:
+    #- host: 10.3.1.9
+
+###### SENSORS -----------------------------
+sensor:
+  - platform: template
+    sensors:
+      googlehome:
+        friendly_name: Google Home
+        value_template: "{% if is_state('device_tracker.googlehome', 'home') %}Connected{% else %}!no-reply, please check!{% endif %}"
+        icon_template: "{% if is_state('device_tracker.googlehome', 'home') %} mdi:google-home{% else %}mdi:lan-disconnect{% endif %}"
+
+###### MEDIA PLAYER ------------------------
+cast:
+  media_player:
+    - host: 10.3.1.9 #google_home
+
+google:
+  client_id: !secret google_client_id
+  client_secret: !secret google_client_secret
+
+tts:
+  - platform: google_translate
+    service_name: google_say
+    cache: true
+    cache_dir: /tmp/tts
+    time_memory: 300
+    base_url: https://homeassistant.iiidefconiii.nl

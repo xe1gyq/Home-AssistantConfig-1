@@ -1,0 +1,38 @@
+############################################
+##             ZIGGO MEDIABOX             ##
+############################################
+###### CUSTOMIZATIONS-----------------------
+homeassistant:
+  customize:
+    script.ziggo_tv_living_room:
+      icon: mdi:television
+      friendly_name: Ziggo TV
+
+###### MEDIA PLAYERS -----------------------
+media_player:
+  - platform: ziggo_mediabox_xl
+    host: 10.3.1.19
+    name: Ziggo Mediabox
+
+###### SCRIPTS -----------------------------
+script:
+  ziggo_tv_living_room:
+    sequence:
+      - service: remote.turn_on
+        entity_id: remote.harmony_hub
+        data:
+          activity: "24699321"
+
+###### SENSORS -----------------------------
+sensor:
+  - platform: template
+    sensors:
+      mediabox:
+        friendly_name: Ziggo Mediabox
+        value_template: "{% if is_state('device_tracker.mediabox', 'home') %}Connected{% else %}Offline{% endif %}"
+        icon_template: "{% if is_state('device_tracker.mediabox', 'home') %} mdi:television{% else %}mdi:lan-disconnect{% endif %}"
+
+###### MEDIA PLAYER ------------------------
+cast:
+  media_player:
+    - host: 10.3.1.19 #mediabox

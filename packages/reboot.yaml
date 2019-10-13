@@ -4,18 +4,18 @@
 ###### CUSTOMIZATIONS-----------------------
 homeassistant:
   customize:
-    script.reboot_htpc01:
+    script.reboot_mgmt01:
       icon: mdi:restart
-      friendly_name: Reboot HTPC
+      friendly_name: Reboot mgmt01
 
 ###### SCRIPTS -----------------------------
 script:
-  reboot_htpc01:
-    alias: Reboot HTPC
+  reboot_mgmt01:
+    alias: Reboot mgmt01
     sequence:
-      - alias: Reboot HTPC
-        service: shell_command.reboot_htpc
+      - alias: Reboot mgmt01
+        service: shell_command.reboot_mgmt01
 
 ###### SHELL COMMANDS ----------------------
 shell_command:
-  reboot_htpc: '/usr/bin/sudo /sbin/shutdown -r now'
+  reboot_mgmt01: '/usr/bin/sudo /sbin/shutdown -r now'

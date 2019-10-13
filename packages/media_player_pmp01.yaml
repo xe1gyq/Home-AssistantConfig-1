@@ -1,0 +1,11 @@
+############################################
+##                 PMP01                  ##
+############################################
+###### SENSORS -----------------------------
+sensor:
+  - platform: template
+    sensors:
+      pmp01:
+        friendly_name: Plex Media Player 01
+        value_template: "{% if is_state('device_tracker.pmp01', 'home') %}Connected{% else %}Offline{% endif %}"
+        icon_template: "{% if is_state('device_tracker.pmp01', 'home') %} mdi:plex{% else %}mdi:lan-disconnect{% endif %}"

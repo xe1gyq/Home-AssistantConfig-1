@@ -1,0 +1,65 @@
+############################################
+##            IIIdefconnasIII             ##
+############################################
+###### PANELS ------------------------------
+panel_iframe:
+  iiidefconnasiii:
+    title: 'IIIdefconnasIII'
+    icon: mdi:nas
+    url: 'https://iiidefconnasiii.iiidefconiii.nl/'
+  gateway:
+    title: 'DEF-FW-01'
+    icon: mdi:router-wireless
+    url: 'https://gateway.iiidefconiii.nl'
+  wiki:
+    title: 'Wiki'
+    icon: mdi:wikipedia
+    url: 'https://wiki.iiidefconiii.nl/'
+  downloads:
+    title: 'Download Station'
+    icon: mdi:briefcase-download
+    url: 'https://downloadstation.iiidefconiii.nl/'
+  bazarr:
+    title: 'Bazarr'
+    icon: mdi:subtitles
+    url: 'https://bazarr.iiidefconiii.nl/'
+  trafficcamera:
+    title: 'Verkeerscameras'
+    icon: mdi:cctv
+    url: 'https://rotterdamonderweg.nl/verkeerscameras?q=%2Fverkeerscameras#verkeerscameraModal1448'
+  tautulli:
+    title: 'Tautulli'
+    icon: mdi:plex
+    url: 'https://tautulli.iiidefconiii.nl'
+  sonarr:
+    title: 'Sonarr Shows'
+    icon: mdi:filmstrip
+    url: 'https://sonarr.iiidefconiii.nl'
+  radarr:
+    title: 'Radarr Movies'
+    icon: mdi:movie
+    url: 'https://radarr.iiidefconiii.nl'
+  jackett:
+    title: 'Jackett'
+    icon: mdi:briefcase-download
+    url: 'https://jackett.iiidefconiii.nl'
+  plex:
+    title: 'Plex'
+    icon: mdi:plex
+    url: 'https://plex.iiidefconiii.nl'
+  defap01:
+    title: 'DEF-AP-01'
+    icon: mdi:router-wireless
+    url: 'https://defap01.iiidefconiii.nl/'
+  surveillancestation:
+    title: 'Surveillance Station'
+    icon: mdi:cctv
+    url: 'https://surveillancestation.iiidefconiii.nl/webman/3rdparty/SurveillanceStation/'
+  cyberattacks:
+    title: 'Cyber Attacks'
+    icon: mdi:web
+    url: 'https://cybermap.kaspersky.com/'
+  sabnzbd:
+    title: 'Sabnzbd'
+    icon: mdi:briefcase-download
+    url: 'https://sabnzbd.iiidefconiii.nl'

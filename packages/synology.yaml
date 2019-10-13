@@ -1,0 +1,28 @@
+############################################
+##              Camera Tablet                ##
+############################################
+###### SENSORS -----------------------------
+sensor:
+  - platform: synologydsm
+    host: 10.3.1.2
+    username: svc_synology_nas
+    password: !secret svc_synology_nas
+    ssl: false
+    port: 50450
+    monitored_conditions:
+      - cpu_total_load
+      - memory_real_usage
+      - network_up
+      - disk_status
+      - disk_name
+      - disk_smart_status
+      - network_down
+      - volume_size_used
+      - volume_size_total
+      - volume_percentage_used
+      - volume_disk_temp_avg
+      - volume_disk_temp_max
+      - disk_temp
+      - disk_exceed_bad_sector_thr
+      - disk_below_remain_life_thr
+      - disk_device

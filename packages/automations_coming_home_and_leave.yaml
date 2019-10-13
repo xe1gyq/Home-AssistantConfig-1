@@ -16,7 +16,7 @@ automation:
         to: 'on'
     action:
       - service: tts.google_say
-        entity_id: media_player.googlehome01
+        entity_id: media_player.googlehome
         data:
           message: 'Welcome home Thomas'
 
@@ -29,7 +29,7 @@ automation:
         to: 'on'
     action:
       - service: tts.google_say
-        entity_id: media_player.googlehome01
+        entity_id: media_player.googlehome
         data:
           message: 'Welcome home Joella'
 
@@ -42,7 +42,7 @@ automation:
         to: 'on'
     action:
       - service: tts.google_say
-        entity_id: media_player.googlehome01
+        entity_id: media_player.googlehome
         data:
           message: 'Welcome guest'
 
@@ -68,14 +68,13 @@ automation:
         - condition: state
           entity_id: input_boolean.jmp
           state: 'off'
-          state: 'off'
         - condition: state
           entity_id: input_boolean.guest
           state: 'off'
     action:
       - delay: 00:00:08
       - service: tts.google_say
-        entity_id: media_player.googlehome01
+        entity_id: media_player.googlehome
         data:
           message: 'Lock the doors'
       - service: light.turn_off
@@ -96,7 +95,7 @@ automation:
         to: 'off'
     action:
       - service: tts.google_say
-        entity_id: media_player.googlehome01
+        entity_id: media_player.googlehome
         data:
           message: 'Taking over control, see you later'
 
@@ -109,7 +108,7 @@ automation:
         to: 'off'
     action:
       - service: tts.google_say
-        entity_id: media_player.googlehome01
+        entity_id: media_player.googlehome
         data:
           message: 'Goodbye'
 
@@ -123,7 +122,7 @@ automation:
     action:
       - service: media_player.play_media
         data_template:
-          entity_id: media_player.googlehome01
+          entity_id: media_player.googlehome
           media_content_id: !secret shakethasassmp3
           media_content_type: 'audio/mp3'
 

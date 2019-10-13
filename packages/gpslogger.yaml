@@ -1,0 +1,11 @@
+############################################
+##                GPSLOGGER               ##
+############################################
+###### SENSORS -----------------------------
+homeassistant:
+  customize:
+    # Add an entry for each entity that you want to overwrite.
+    device_tracker.r58m31yy1hx:
+      entity_picture: /local/icons/avatars/TVD.png?v=1
+    device_tracker.ce12171cac18a42f05:    
+      entity_picture: /local/icons/avatars/JMP.png?v=1

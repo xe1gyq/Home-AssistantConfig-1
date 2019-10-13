@@ -1,0 +1,11 @@
+############################################
+##            IIIdefconnasIII             ##
+############################################
+###### SENSORS -----------------------------
+sensor:
+  - platform: template
+    sensors:
+      iiidefconnasiii:
+        friendly_name: IIIdefconnasIII
+        icon_template: "{% if is_state('device_tracker.iiidefconnasiii', 'home') %} mdi:nas{% else %}mdi:lan-disconnect{% endif %}"
+        value_template: "{% if is_state('device_tracker.iiidefconnasiii', 'home') %}Connected{% else %}!no-reply, please check!{% endif %}"
