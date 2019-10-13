@@ -32,19 +32,27 @@ Windy<br />
 Youtube<br />
 Ziggo TV<br />
 
-![Alt text](https://github.com/IIIdefconIII/Home-AssistantConfig/blob/master/screenshots/screenshot_1.png?raw=true "Title")
-![Alt text](https://github.com/IIIdefconIII/Home-AssistantConfig/blob/master/screenshots/screenshot_2.png?raw=true "Title")
-![Alt text](https://github.com/IIIdefconIII/Home-AssistantConfig/blob/master/screenshots/screenshot_3.png?raw=true "Title")
-![Alt text](https://github.com/IIIdefconIII/Home-AssistantConfig/blob/master/screenshots/screenshot_4.png?raw=true "Title")
-![Alt text](https://github.com/IIIdefconIII/Home-AssistantConfig/blob/master/screenshots/screenshot_5.png?raw=true "Title")
-![Alt text](https://github.com/IIIdefconIII/Home-AssistantConfig/blob/master/screenshots/screenshot_6.png?raw=true "Title")
-![Alt text](https://github.com/IIIdefconIII/Home-AssistantConfig/blob/master/screenshots/screenshot_7.png?raw=true "Title")
-![Alt text](https://github.com/IIIdefconIII/Home-AssistantConfig/blob/master/screenshots/screenshot_8.png?raw=true "Title")
-![Alt text](https://github.com/IIIdefconIII/Home-AssistantConfig/blob/master/screenshots/screenshot_9.png?raw=true "Title")
-![Alt text](https://github.com/IIIdefconIII/Home-AssistantConfig/blob/master/screenshots/screenshot_10.png?raw=true "Title")
-![Alt text](https://github.com/IIIdefconIII/Home-AssistantConfig/blob/master/screenshots/screenshot_11.png?raw=true "Title")
-![Alt text](https://github.com/IIIdefconIII/Home-AssistantConfig/blob/master/screenshots/screenshot_12.png?raw=true "Title")
-![Alt text](https://github.com/IIIdefconIII/Home-AssistantConfig/blob/master/screenshots/screenshot_13.png?raw=true "Title")
-![Alt text](https://github.com/IIIdefconIII/Home-AssistantConfig/blob/master/screenshots/screenshot_14.png?raw=true "Title")
-![Alt text](https://github.com/IIIdefconIII/Home-AssistantConfig/blob/master/screenshots/screenshot_15.png?raw=true "Title")
-![Alt text](https://github.com/IIIdefconIII/Home-AssistantConfig/blob/master/screenshots/screenshot_16.png?raw=true "Title")
+![Alt text](https://github.com/IIIdefconIII/Home-AssistantConfig/blob/master/screenshots/1.png?raw=true "Title")
+![Alt text](https://github.com/IIIdefconIII/Home-AssistantConfig/blob/master/screenshots/2.png?raw=true "Title")
+![Alt text](https://github.com/IIIdefconIII/Home-AssistantConfig/blob/master/screenshots/3.png?raw=true "Title")
+![Alt text](https://github.com/IIIdefconIII/Home-AssistantConfig/blob/master/screenshots/4.png?raw=true "Title")
+![Alt text](https://github.com/IIIdefconIII/Home-AssistantConfig/blob/master/screenshots/5.png?raw=true "Title")
+![Alt text](https://github.com/IIIdefconIII/Home-AssistantConfig/blob/master/screenshots/6.png?raw=true "Title")
+![Alt text](https://github.com/IIIdefconIII/Home-AssistantConfig/blob/master/screenshots/7.png?raw=true "Title")
+![Alt text](https://github.com/IIIdefconIII/Home-AssistantConfig/blob/master/screenshots/8.png?raw=true "Title")
+![Alt text](https://github.com/IIIdefconIII/Home-AssistantConfig/blob/master/screenshots/9.png?raw=true "Title")
+![Alt text](https://github.com/IIIdefconIII/Home-AssistantConfig/blob/master/screenshots/10.png?raw=true "Title")
+![Alt text](https://github.com/IIIdefconIII/Home-AssistantConfig/blob/master/screenshots/11.png?raw=true "Title")
+![Alt text](https://github.com/IIIdefconIII/Home-AssistantConfig/blob/master/screenshots/12.png?raw=true "Title")
+![Alt text](https://github.com/IIIdefconIII/Home-AssistantConfig/blob/master/screenshots/13.png?raw=true "Title")
+![Alt text](https://github.com/IIIdefconIII/Home-AssistantConfig/blob/master/screenshots/14.png?raw=true "Title")
+![Alt text](https://github.com/IIIdefconIII/Home-AssistantConfig/blob/master/screenshots/15.png?raw=true "Title")
+![Alt text](https://github.com/IIIdefconIII/Home-AssistantConfig/blob/master/screenshots/16.png?raw=true "Title")
+![Alt text](https://github.com/IIIdefconIII/Home-AssistantConfig/blob/master/screenshots/17png?raw=true "Title")
+![Alt text](https://github.com/IIIdefconIII/Home-AssistantConfig/blob/master/screenshots/18.png?raw=true "Title")
+![Alt text](https://github.com/IIIdefconIII/Home-AssistantConfig/blob/master/screenshots/19.png?raw=true "Title")
+![Alt text](https://github.com/IIIdefconIII/Home-AssistantConfig/blob/master/screenshots/20.png?raw=true "Title"
+![Alt text](https://github.com/IIIdefconIII/Home-AssistantConfig/blob/master/screenshots/21.png?raw=true "Title"
+![Alt text](https://github.com/IIIdefconIII/Home-AssistantConfig/blob/master/screenshots/22.png?raw=true "Title"png?raw=true "Title"
+v
+
