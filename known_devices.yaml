@@ -1,74 +1,19 @@
 #known_devices.yaml
-
-###### MY PHONE ----------------------------
-#GPSLOGGER
-ce0317134022612504:
-  hide_if_away: false
-  icon: mdi:cellphone-android
-  mac:
-  name: mygpslogger
-  picture: /local/icons/avatars/TVD.png
-  track: true
-
 #NMAP
-thomas_thomasgalaxys8:
+thomasphone:
   hide_if_away: false
   icon: mdi:cellphone-android
-  mac: 30:07:4D:00:C9:15
+  mac: A8:DB:03:38:97:81
   name: !secret my_name
   picture: /local/icons/avatars/TVD.png
   track: true
 
-thomas_thomasgalaxys10plus:
-  hide_if_away: false
-  icon: mdi:cellphone-android
-  mac: A8:DB:03:38:97:81
-  name: Galaxy-S10
-  picture: /local/icons/avatars/TVD.png
-  track: true
-
-#PING
-my_galaxys8_phone_ping:
-  hide_if_away: false
-  icon: mdi:cellphone-android
-  mac:
-  name: my galaxys8 phone ping
-  picture: /local/icons/avatars/TVD.png
-  track: true
-
-my_galaxys10plus_phone_ping:
-  hide_if_away: false
-  icon: mdi:cellphone-android
-  mac:
-  name: my galaxy s10plus phone ping
-  picture: /local/icons/avatars/TVD.png
-  track: true
-
-###### WIFE PHONE -------------------------
-#GPSLOGGER
-ce12171cac18a42f05:
-  hide_if_away: false
-  icon: mdi:cellphone-android
-  mac:
-  name: wifegpslogger
-  picture: /local/icons/avatars/JMP.png
-  track: true
-
 #NMAP
-joella_joellagalaxys8:
+joellaphone:
   hide_if_away: false
   icon: mdi:cellphone-android
   mac: 24:18:1D:A2:E4:E3
   name: !secret wife_name
-  picture: /local/icons/avatars/JMP.png
-  track: true
-
-#PING
-wife_phone_ping:
-  hide_if_away: false
-  icon: mdi:cellphone-android
-  mac:
-  name: wife phone ping
   picture: /local/icons/avatars/JMP.png
   track: true
 
@@ -161,19 +106,11 @@ homeassistanttablet:
   picture:
   track: true
 
-htpc01:
-  hide_if_away: false
-  icon: mdi:kodi
-  mac: 6C:62:6D:8F:A1:66
-  name: htpc01
-  picture:
-  track: true
-
-htpc01:
+mgmt01:
   hide_if_away: false
   icon:
-  mac: 48:5D:60:19:7B:F6
-  name: HTPC-01
+  mac: 00:0C:29:E2:FE:33
+  name: mgmt01
   picture:
   track: true
 
@@ -185,11 +122,35 @@ iiidefcontoweriii:
   picture:
   track: true
 
-osmc:
+iiidefcontoweriiiwifi:
   hide_if_away: false
-  icon:
+  icon: mdi:desktop-tower
+  mac: 1C:87:2C:B6:9B:FF
+  name: iiidefcontoweriiiwifi
+  picture:
+  track: true
+  
+iiidefconnasiii:
+  hide_if_away: false
+  icon: mdi:nas
+  mac: 00:11:32:95:C7:23
+  name: IIIdefconnasIII
+  picture:
+  track: true
+
+mediabox:
+  hide_if_away: false
+  icon: mdi:television
+  mac: 18:9C:27:3E:E8:18
+  name: EOSSTB
+  picture:
+  track: true
+
+pmp01:
+  hide_if_away: false
+  icon: mdi:plex
   mac: B8:27:EB:10:E3:C9
-  name: osmc
+  name: Plex Media Player 01
   picture:
   track: true
 
@@ -234,16 +195,10 @@ ziggomediaboxxl:
   track: true
 
 ###### BT ----------------------------
-google_home:
-  hide_if_away: false
-  icon:
-  mac: BT_20:DF:B9:87:ED:91
-  name: Google Home
-  picture:
-  track: true
+
 
 ###### PING ----------------------------
-ltjoella:
+joellalaptop:
   hide_if_away: true
   icon: mdi:laptop-windows
   mac: AC:81:12:24:8D:CF
@@ -300,42 +255,91 @@ kursatk:
   picture: /local/icons/avatars/KK.png
   track: true
 
-ziggomediaboxxl_2:
-  hide_if_away: false
-  icon:
-  mac: E8:AB:FA:01:F9:54
-  name: ziggomediaboxxl
-  picture:
-  track: true
-
-10_3_1_9_61_e1_e1_99_1c_a6:
-  hide_if_away: false
-  icon:
-  mac:
-  name: 10 3 1 9 61 e1 e1 99 1c a6
-  picture:
-  track: true
-
-r58m31yy1hx:
-  hide_if_away: false
-  icon:
-  mac:
-  name: r58m31yy1hx
-  picture:
-  track: true
-
-10_3_1_9_5b_a8_11_09_77_f6:
-  hide_if_away: false
-  icon:
-  mac:
-  name: 10 3 1 9 5b a8 11 09 77 f6
-  picture:
-  track: true
-
-34_f3_9a_62_6f_d3:
+nb_thomas:
   hide_if_away: false
   icon:
   mac: 34:F3:9A:62:6F:D3
-  name: 34 f3 9a 62 6f d3
+  name: NB-THOMAS
+  picture:
+  track: true
+
+
+00_11_32_95_c7_24:
+  hide_if_away: false
+  icon:
+  mac: 00:11:32:95:C7:24
+  name: 00 11 32 95 c7 24
+  picture:
+  track: true
+
+lap16261:
+  hide_if_away: false
+  icon:
+  mac: 34:F6:4B:52:7F:D8
+  name: LAP16261
+  picture:
+  track: true
+
+galaxy_j6:
+  hide_if_away: false
+  icon:
+  mac: BC:A5:8B:AC:21:00
+  name: Galaxy-J6
+  picture:
+  track: true
+
+michael_jackson:
+  hide_if_away: false
+  icon:
+  mac: F4:06:16:4C:B5:0A
+  name: Michael-jackson
+  picture:
+  track: true
+
+'00_00_00_00_00_00':
+  hide_if_away: false
+  icon:
+  mac: 00:00:00:00:00:00
+  name: 00 00 00 00 00 00
+  picture:
+  track: true
+
+edpc:
+  hide_if_away: false
+  icon:
+  mac: 14:DA:E9:01:94:FA
+  name: EDPC
+  picture:
+  track: true
+
+galaxywatch_62e4:
+  hide_if_away: false
+  icon:
+  mac: 64:89:F1:5F:62:E5
+  name: GalaxyWatch-62E4
+  picture:
+  track: true
+
+desktop_o10laf0:
+  hide_if_away: false
+  icon:
+  mac: 6C:62:6D:3A:BC:7D
+  name: DESKTOP-O10LAF0
+  picture:
+  track: true
+
+galaxy_j6_2:
+  hide_if_away: false
+  icon:
+  mac: 68:E7:C2:17:01:AB
+  name: Galaxy-J6
+  picture:
+  track: true
+
+android:
+  hide_if_away: false
+  icon:
+  mac: 4C:66:41:BE:A2:5F
+  name: Android
   picture:
   track: true
