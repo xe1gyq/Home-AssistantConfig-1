@@ -4,6 +4,7 @@ This is my first Home Assistant Project!
 
 Intergrated:<br />
 Bus Times<br />
+Afvalwijzer<br />
 Cameras<br />
 Carbage Pickup<br />
 Dark sky weather<br />
